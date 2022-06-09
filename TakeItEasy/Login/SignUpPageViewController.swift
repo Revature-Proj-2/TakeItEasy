@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import CoreData
 
 class SignUpPageViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var getOPT: UIButton!
     @IBOutlet weak var phoneReqText: UILabel!
     @IBOutlet weak var phoneNumberField: UITextField!
@@ -22,6 +24,8 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var nameReqText: UILabel!
     @IBOutlet weak var reEnterPasswordField: UITextField!
     var activeTextField = UITextField()
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
     
     func isValidPassword(_ str : String) -> Bool {
@@ -119,6 +123,7 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func getOPTPressed(_ sender: Any) {
         if(allFieldsFilledOut()){
+            signUpButton.isEnabled = true
             print("send OTP")
         }else{
             let defaultAction = UIAlertAction(title: "Ok", style: .default){(action) in}
@@ -128,5 +133,49 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    func createUser(_ userName : String){
+        do{
+            let request = User.fetchRequest() as NSFetchRequest<User>
+            let pred = NSPredicate(format: "userName == %@", userName)
+            request.predicate = pred
+            let userArr = try context.fetch(request)
+            let user = userArr.first
+            if (user?.userName != nil) {
+                return
+            }else{
+                let newUser = User(context: context)
+                newUser.userName = userName
+                newUser.email = emailField.text
+                newUser.phoneNumber = Int16(Int(phoneNumberField.text!) ?? 0)
+                do{
+                    try context.save()
+                }catch{
+                    print("error saving User")
+                }
+                print("new user created")
+            }
+        }catch{
+            print("Error fetching user")
+        }
+    }
+    
+    @IBAction func signUpButtonPressed(_ sender: Any) {
+        let attribute : [String : Any] = [kSecClass as String : kSecClassGenericPassword, kSecAttrAccount as String : nameField.text!, kSecValueData as String : passwordField.text!.data(using: .utf8)!]
+        if SecItemAdd(attribute as CFDictionary, nil) == noErr {
+            createUser(nameField.text!)
+            let defaultAction = UIAlertAction(title: "Ok", style: .default){(action) in
+                self.navigationController?.popViewController(animated: true)
+            }
+            let alert = UIAlertController(title: "Sign up Successful", message: "Please log in with your credentials", preferredStyle: .alert)
+            alert.addAction(defaultAction)
+            self.present(alert, animated: true)
+            
+        }else{
+            let defaultAction = UIAlertAction(title: "Ok", style: .default){(action) in}
+            let alert = UIAlertController(title: "Error", message: "An error has occurred", preferredStyle: .alert)
+            alert.addAction(defaultAction)
+            self.present(alert, animated: true)
+        }
+    }
     
 }

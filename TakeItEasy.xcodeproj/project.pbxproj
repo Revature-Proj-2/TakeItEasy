@@ -105,18 +105,26 @@
 				84361560284FFA0E00D835DF /* AppDelegate.swift */,
 				84361562284FFA0E00D835DF /* SceneDelegate.swift */,
 				84361566284FFA0E00D835DF /* Main.storyboard */,
-				84361577284FFAEA00D835DF /* Login.storyboard */,
 				8436156C284FFA0F00D835DF /* Assets.xcassets */,
 				8436156E284FFA0F00D835DF /* LaunchScreen.storyboard */,
 				84361571284FFA0F00D835DF /* Info.plist */,
 				84361569284FFA0E00D835DF /* TakeItEasy.xcdatamodeld */,
-				84361579284FFB2300D835DF /* LoginPageViewController.swift */,
-				8436157B284FFD9700D835DF /* SignUpPageViewController.swift */,
+				843615C328524F1B00D835DF /* Login */,
 				843615BF285131D300D835DF /* ObservableObject.swift */,
 				AE22121A285248350091A102 /* Quiz */,
 				8475A5F92852402500FB26B5 /* Notes */,
 			);
 			path = TakeItEasy;
+			sourceTree = "<group>";
+		};
+		843615C328524F1B00D835DF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				84361577284FFAEA00D835DF /* Login.storyboard */,
+				8436157B284FFD9700D835DF /* SignUpPageViewController.swift */,
+				84361579284FFB2300D835DF /* LoginPageViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		8475A5F92852402500FB26B5 /* Notes */ = {
