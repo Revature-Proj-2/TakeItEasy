@@ -119,7 +119,7 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func getOPTPressed(_ sender: Any) {
         if(allFieldsFilledOut()){
-            print("send OPT")
+            print("send OTP")
         }else{
             let defaultAction = UIAlertAction(title: "Ok", style: .default){(action) in}
             let alert = UIAlertController(title: "Error", message: "All Fields must be filled out", preferredStyle: .alert)
