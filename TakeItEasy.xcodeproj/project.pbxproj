@@ -18,6 +18,14 @@
 		8436157A284FFB2300D835DF /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84361579284FFB2300D835DF /* LoginPageViewController.swift */; };
 		8436157C284FFD9700D835DF /* SignUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436157B284FFD9700D835DF /* SignUpPageViewController.swift */; };
 		843615C0285131D300D835DF /* ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843615BF285131D300D835DF /* ObservableObject.swift */; };
+		8475A6052852402500FB26B5 /* NotesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A5FB2852402500FB26B5 /* NotesCollectionViewCell.swift */; };
+		8475A6062852402500FB26B5 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A5FC2852402500FB26B5 /* NotesViewController.swift */; };
+		8475A6072852402500FB26B5 /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A5FD2852402500FB26B5 /* NotesTableViewCell.swift */; };
+		8475A6082852402500FB26B5 /* NotesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8475A5FF2852402500FB26B5 /* NotesTableViewCell.xib */; };
+		8475A6092852402500FB26B5 /* NotesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8475A6002852402500FB26B5 /* NotesCollectionViewCell.xib */; };
+		8475A60A2852402500FB26B5 /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8475A6012852402500FB26B5 /* Notes.storyboard */; };
+		8475A60B2852402500FB26B5 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A6032852402500FB26B5 /* Note+CoreDataProperties.swift */; };
+		8475A60C2852402500FB26B5 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A6042852402500FB26B5 /* Note+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +42,14 @@
 		84361579284FFB2300D835DF /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		8436157B284FFD9700D835DF /* SignUpPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPageViewController.swift; sourceTree = "<group>"; };
 		843615BF285131D300D835DF /* ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObject.swift; sourceTree = "<group>"; };
+		8475A5FB2852402500FB26B5 /* NotesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesCollectionViewCell.swift; sourceTree = "<group>"; };
+		8475A5FC2852402500FB26B5 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		8475A5FD2852402500FB26B5 /* NotesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
+		8475A5FF2852402500FB26B5 /* NotesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotesTableViewCell.xib; sourceTree = "<group>"; };
+		8475A6002852402500FB26B5 /* NotesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotesCollectionViewCell.xib; sourceTree = "<group>"; };
+		8475A6012852402500FB26B5 /* Notes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notes.storyboard; sourceTree = "<group>"; };
+		8475A6032852402500FB26B5 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8475A6042852402500FB26B5 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +94,48 @@
 				84361579284FFB2300D835DF /* LoginPageViewController.swift */,
 				8436157B284FFD9700D835DF /* SignUpPageViewController.swift */,
 				843615BF285131D300D835DF /* ObservableObject.swift */,
+				8475A5F92852402500FB26B5 /* Notes */,
 			);
 			path = TakeItEasy;
+			sourceTree = "<group>";
+		};
+		8475A5F92852402500FB26B5 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				8475A5FA2852402500FB26B5 /* NotesScripts */,
+				8475A5FE2852402500FB26B5 /* NotesStoryBoards */,
+				8475A6022852402500FB26B5 /* NotesData */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		8475A5FA2852402500FB26B5 /* NotesScripts */ = {
+			isa = PBXGroup;
+			children = (
+				8475A5FB2852402500FB26B5 /* NotesCollectionViewCell.swift */,
+				8475A5FC2852402500FB26B5 /* NotesViewController.swift */,
+				8475A5FD2852402500FB26B5 /* NotesTableViewCell.swift */,
+			);
+			path = NotesScripts;
+			sourceTree = "<group>";
+		};
+		8475A5FE2852402500FB26B5 /* NotesStoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				8475A5FF2852402500FB26B5 /* NotesTableViewCell.xib */,
+				8475A6002852402500FB26B5 /* NotesCollectionViewCell.xib */,
+				8475A6012852402500FB26B5 /* Notes.storyboard */,
+			);
+			path = NotesStoryBoards;
+			sourceTree = "<group>";
+		};
+		8475A6022852402500FB26B5 /* NotesData */ = {
+			isa = PBXGroup;
+			children = (
+				8475A6032852402500FB26B5 /* Note+CoreDataProperties.swift */,
+				8475A6042852402500FB26B5 /* Note+CoreDataClass.swift */,
+			);
+			path = NotesData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +196,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8475A6082852402500FB26B5 /* NotesTableViewCell.xib in Resources */,
+				8475A60A2852402500FB26B5 /* Notes.storyboard in Resources */,
 				84361578284FFAEA00D835DF /* Login.storyboard in Resources */,
+				8475A6092852402500FB26B5 /* NotesCollectionViewCell.xib in Resources */,
 				84361570284FFA0F00D835DF /* LaunchScreen.storyboard in Resources */,
 				8436156D284FFA0F00D835DF /* Assets.xcassets in Resources */,
 				84361568284FFA0E00D835DF /* Main.storyboard in Resources */,
@@ -154,11 +213,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8475A60B2852402500FB26B5 /* Note+CoreDataProperties.swift in Sources */,
+				8475A6052852402500FB26B5 /* NotesCollectionViewCell.swift in Sources */,
 				84361565284FFA0E00D835DF /* ViewController.swift in Sources */,
 				84361561284FFA0E00D835DF /* AppDelegate.swift in Sources */,
 				84361563284FFA0E00D835DF /* SceneDelegate.swift in Sources */,
 				8436157C284FFD9700D835DF /* SignUpPageViewController.swift in Sources */,
+				8475A6062852402500FB26B5 /* NotesViewController.swift in Sources */,
 				843615C0285131D300D835DF /* ObservableObject.swift in Sources */,
+				8475A6072852402500FB26B5 /* NotesTableViewCell.swift in Sources */,
+				8475A60C2852402500FB26B5 /* Note+CoreDataClass.swift in Sources */,
 				8436157A284FFB2300D835DF /* LoginPageViewController.swift in Sources */,
 				8436156B284FFA0E00D835DF /* TakeItEasy.xcdatamodeld in Sources */,
 			);
