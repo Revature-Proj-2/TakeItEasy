@@ -1,0 +1,339 @@
+{"qType":{
+    "data1":{
+      "questions":[
+         {
+            "correct":"Object Oriented Programming",
+            "answerA":"On Out Pro",
+            "answerB":"Oh Oh programming",
+            "answerC":"Other original program",
+            "answerD":"Otter on pole",
+            "question":"What does OOP stand for in programming?"
+         },
+         {
+            "correct":"Camel",
+            "answerA":"Camel",
+            "answerB":"Rat",
+            "answerC":"Snake",
+            "answerD":"Scorpion",
+            "question":"Which animal is known as the ‘Ship of the Desert??"
+         },
+         {
+            "correct":"26",
+            "answerA":"25",
+            "answerB":"26",
+            "answerC":"27",
+            "answerD":"28",
+            "question":"How many letters are there in the English alphabet?"
+         },
+         {
+            "correct":"Blue whale",
+            "answerA":"Dinosaur",
+            "answerB":"Giraffe",
+            "answerC":"Elephant",
+            "answerD":"Blue whale",
+            "question":"Which is the largest animal in the world?"
+         },
+         {
+            "correct":"Red",
+            "answerA":"Blue",
+            "answerB":"Red",
+            "answerC":"Yellow",
+            "answerD":"Orange",
+            "question":"Which is the top color in a rainbow?"
+         },
+         {
+            "correct":"206",
+            "answerA":"205",
+            "answerB":"206",
+            "answerC":"207",
+            "answerD":"208",
+            "question":"How many bones does an adult human have?"
+         },
+         {
+            "correct":"Sun",
+            "answerA":"Jupitor",
+            "answerB":"Mars",
+            "answerC":"Moon",
+            "answerD":"Sun",
+            "question":"Which is the nearest star to planet earth?"
+         },
+         {
+            "correct":"Skin",
+            "answerA":"Tongue",
+            "answerB":"Eyes",
+            "answerC":"Skin",
+            "answerD":"Nose",
+            "question":"Which is the most sensitive organ in our body?"
+         },
+         {
+            "correct":"Eight",
+            "answerA":"Seven",
+            "answerB":"Three",
+            "answerC":"Four",
+            "answerD":"Eight",
+            "question":"How many legs does a spider have?"
+         },
+         {
+            "correct":"3",
+            "answerA":"2",
+            "answerB":"3",
+            "answerC":"4",
+            "answerD":"0",
+            "question":"How many sides are there in a triangle?"
+         }
+      ]
+   },
+    "data2":{
+      "questions":[
+         {
+            "correct":"7",
+            "answerA":"5",
+            "answerB":"6",
+            "answerC":"7",
+            "answerD":"8",
+            "question":"How many days do we have in a week?"
+         },
+         {
+            "correct":"Camel",
+            "answerA":"Camel",
+            "answerB":"Rat",
+            "answerC":"Snake",
+            "answerD":"Scorpion",
+            "question":"Which animal is known as the ‘Ship of the Desert??"
+         },
+         {
+            "correct":"26",
+            "answerA":"25",
+            "answerB":"26",
+            "answerC":"27",
+            "answerD":"28",
+            "question":"How many letters are there in the English alphabet?"
+         },
+         {
+            "correct":"Blue whale",
+            "answerA":"Dinosaur",
+            "answerB":"Giraffe",
+            "answerC":"Elephant",
+            "answerD":"Blue whale",
+            "question":"Which is the largest animal in the world?"
+         },
+         {
+            "correct":"Red",
+            "answerA":"Blue",
+            "answerB":"Red",
+            "answerC":"Yellow",
+            "answerD":"Orange",
+            "question":"Which is the top color in a rainbow?"
+         },
+         {
+            "correct":"206",
+            "answerA":"205",
+            "answerB":"206",
+            "answerC":"207",
+            "answerD":"208",
+            "question":"How many bones does an adult human have?"
+         },
+         {
+            "correct":"Sun",
+            "answerA":"Jupitor",
+            "answerB":"Mars",
+            "answerC":"Moon",
+            "answerD":"Sun",
+            "question":"Which is the nearest star to planet earth?"
+         },
+         {
+            "correct":"Skin",
+            "answerA":"Tongue",
+            "answerB":"Eyes",
+            "answerC":"Skin",
+            "answerD":"Nose",
+            "question":"Which is the most sensitive organ in our body?"
+         },
+         {
+            "correct":"Eight",
+            "answerA":"Seven",
+            "answerB":"Three",
+            "answerC":"Four",
+            "answerD":"Eight",
+            "question":"How many legs does a spider have?"
+         },
+         {
+            "correct":"3",
+            "answerA":"2",
+            "answerB":"3",
+            "answerC":"4",
+            "answerD":"0",
+            "question":"How many sides are there in a triangle?"
+         }
+      ]
+   },
+    "data3":{
+      "questions":[
+         {
+            "correct":"7",
+            "answerA":"5",
+            "answerB":"6",
+            "answerC":"7",
+            "answerD":"8",
+            "question":"How many days do we have in a week?"
+         },
+         {
+            "correct":"Camel",
+            "answerA":"Camel",
+            "answerB":"Rat",
+            "answerC":"Snake",
+            "answerD":"Scorpion",
+            "question":"Which animal is known as the ‘Ship of the Desert??"
+         },
+         {
+            "correct":"26",
+            "answerA":"25",
+            "answerB":"26",
+            "answerC":"27",
+            "answerD":"28",
+            "question":"How many letters are there in the English alphabet?"
+         },
+         {
+            "correct":"Blue whale",
+            "answerA":"Dinosaur",
+            "answerB":"Giraffe",
+            "answerC":"Elephant",
+            "answerD":"Blue whale",
+            "question":"Which is the largest animal in the world?"
+         },
+         {
+            "correct":"Red",
+            "answerA":"Blue",
+            "answerB":"Red",
+            "answerC":"Yellow",
+            "answerD":"Orange",
+            "question":"Which is the top color in a rainbow?"
+         },
+         {
+            "correct":"206",
+            "answerA":"205",
+            "answerB":"206",
+            "answerC":"207",
+            "answerD":"208",
+            "question":"How many bones does an adult human have?"
+         },
+         {
+            "correct":"Sun",
+            "answerA":"Jupitor",
+            "answerB":"Mars",
+            "answerC":"Moon",
+            "answerD":"Sun",
+            "question":"Which is the nearest star to planet earth?"
+         },
+         {
+            "correct":"Skin",
+            "answerA":"Tongue",
+            "answerB":"Eyes",
+            "answerC":"Skin",
+            "answerD":"Nose",
+            "question":"Which is the most sensitive organ in our body?"
+         },
+         {
+            "correct":"Eight",
+            "answerA":"Seven",
+            "answerB":"Three",
+            "answerC":"Four",
+            "answerD":"Eight",
+            "question":"How many legs does a spider have?"
+         },
+         {
+            "correct":"3",
+            "answerA":"2",
+            "answerB":"3",
+            "answerC":"4",
+            "answerD":"0",
+            "question":"How many sides are there in a triangle?"
+         }
+      ]
+   },
+    "data4":{
+      "questions":[
+         {
+            "correct":"7",
+            "answerA":"5",
+            "answerB":"6",
+            "answerC":"7",
+            "answerD":"8",
+            "question":"How many days do we have in a week?"
+         },
+         {
+            "correct":"Camel",
+            "answerA":"Camel",
+            "answerB":"Rat",
+            "answerC":"Snake",
+            "answerD":"Scorpion",
+            "question":"Which animal is known as the ‘Ship of the Desert??"
+         },
+         {
+            "correct":"26",
+            "answerA":"25",
+            "answerB":"26",
+            "answerC":"27",
+            "answerD":"28",
+            "question":"How many letters are there in the English alphabet?"
+         },
+         {
+            "correct":"Blue whale",
+            "answerA":"Dinosaur",
+            "answerB":"Giraffe",
+            "answerC":"Elephant",
+            "answerD":"Blue whale",
+            "question":"Which is the largest animal in the world?"
+         },
+         {
+            "correct":"Red",
+            "answerA":"Blue",
+            "answerB":"Red",
+            "answerC":"Yellow",
+            "answerD":"Orange",
+            "question":"Which is the top color in a rainbow?"
+         },
+         {
+            "correct":"206",
+            "answerA":"205",
+            "answerB":"206",
+            "answerC":"207",
+            "answerD":"208",
+            "question":"How many bones does an adult human have?"
+         },
+         {
+            "correct":"Sun",
+            "answerA":"Jupitor",
+            "answerB":"Mars",
+            "answerC":"Moon",
+            "answerD":"Sun",
+            "question":"Which is the nearest star to planet earth?"
+         },
+         {
+            "correct":"Skin",
+            "answerA":"Tongue",
+            "answerB":"Eyes",
+            "answerC":"Skin",
+            "answerD":"Nose",
+            "question":"Which is the most sensitive organ in our body?"
+         },
+         {
+            "correct":"Eight",
+            "answerA":"Seven",
+            "answerB":"Three",
+            "answerC":"Four",
+            "answerD":"Eight",
+            "question":"How many legs does a spider have?"
+         },
+         {
+            "correct":"3",
+            "answerA":"2",
+            "answerB":"3",
+            "answerC":"4",
+            "answerD":"0",
+            "question":"How many sides are there in a triangle?"
+         }
+      ]
+   }
+}
+}
