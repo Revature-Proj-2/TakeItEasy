@@ -18,10 +18,11 @@ class NotesCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        dateFormatter.dateFormat = "dd.MM.yyyy"
+        dateFormatter.dateFormat = "dd/MM/yyyy hh:mm"
     }
     public func configure(with text: String, date: Date){
         labelView.numberOfLines = 0
+        dateView.numberOfLines = 0
         labelView.text = text
         dateView.text = dateFormatter.string(from: date)
     }

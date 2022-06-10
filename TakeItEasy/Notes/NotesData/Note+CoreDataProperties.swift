@@ -16,9 +16,10 @@ extension Note {
         return NSFetchRequest<Note>(entityName: "Note")
     }
 
+   
     @NSManaged public var date: Date?
     @NSManaged public var text: String?
-
+    
 }
 
 extension Note : Identifiable {

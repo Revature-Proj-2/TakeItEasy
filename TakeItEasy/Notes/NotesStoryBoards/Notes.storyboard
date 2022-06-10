@@ -45,6 +45,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NGL-zD-RWg">
                                 <rect key="frame" x="330" y="111" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeArray:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mTO-3e-6jc"/>
+                                </connections>
                             </switch>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fnM-ru-yVm">
                                 <rect key="frame" x="0.0" y="442" width="414" height="420"/>
@@ -62,7 +65,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xf-q6-6lk">
-                                <rect key="frame" x="320" y="403" width="66" height="31"/>
+                                <rect key="frame" x="298" y="403" width="88" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Delete"/>
@@ -71,7 +74,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfX-CS-C0A">
-                                <rect key="frame" x="171" y="403" width="72" height="31"/>
+                                <rect key="frame" x="155" y="403" width="88" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Update"/>
@@ -80,7 +83,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="QeY-o4-7O1">
-                                <rect key="frame" x="20" y="403" width="72" height="31"/>
+                                <rect key="frame" x="20" y="403" width="88" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Save"/>
@@ -107,6 +110,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="displayArray" destination="NGL-zD-RWg" id="PZA-ab-PaA"/>
                         <outlet property="notesCollection" destination="JAj-sA-yJj" id="oBV-tI-h0f"/>
                         <outlet property="notesSearchBar" destination="KTu-5V-S8v" id="rUC-gV-xLy"/>
                         <outlet property="notesTable" destination="fnM-ru-yVm" id="mae-9i-8oc"/>
