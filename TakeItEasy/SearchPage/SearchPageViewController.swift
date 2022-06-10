@@ -10,12 +10,16 @@ import WebKit
 
 class SearchPageViewController: UIViewController {
 
+   
+    @IBOutlet weak var webView: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //comment2
+        webView.load(URLRequest(url: URL(string: "https:www.google.com")!))
+        
     }
     
-
+    
     
 
 }
