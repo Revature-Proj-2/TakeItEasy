@@ -14,10 +14,11 @@ class NotesViewController: UIViewController {
     @IBOutlet weak var notesTable: UITableView!
     @IBOutlet weak var notesCollection: UICollectionView!
     @IBOutlet weak var notesSearchBar: UISearchBar!
+    @IBOutlet weak var displayArray: UISwitch!
+    
     
     //Global Variables
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    let dateFormatter = DateFormatter()
     var notes = [Note]()
     var filteredNotes = [Note]()
     var filtered = false
@@ -26,17 +27,19 @@ class NotesViewController: UIViewController {
     
     //IBActions
     @IBAction func saveNote(_ sender: Any){
-        createItem(text: textIn.text)
-        getAllItems()
-        notesCollection.reloadData()
-        noteIndex = notes.count - 1
+        if(textIn.hasText){
+            createItem(text: textIn.text)
+            getAllItems()
+            reloadArray()
+            noteIndex = notes.count - 1
+        }
     }
     
     @IBAction func updateNote(_ sender: Any){
-        if(noteIndex != notes.count && noteIndex != -1){
+        if(noteIndex != notes.count && noteIndex != -1 && textIn.hasText){
             updateItem(item: notes[noteIndex], newText: textIn.text)
             getAllItems()
-            notesCollection.reloadData()
+            reloadArray()
         }
     }
     
@@ -44,9 +47,31 @@ class NotesViewController: UIViewController {
         if(noteIndex != notes.count && noteIndex != -1){
             deleteItem(item: notes[noteIndex])
             getAllItems()
-            notesCollection.reloadData()
+            if(noteIndex < notes.count){
+                textIn.text = filteredNotes[noteIndex].text
+            }else{
+                textIn.text = ""
+            }
+            
+            reloadArray()
         }
     }
+    
+    @IBAction func changeArray(_ sender: Any){
+        if(displayArray.isOn == true){
+            notesTable.isHidden = true
+            notesCollection.isHidden = false
+        }else{
+            notesCollection.isHidden = true
+            notesTable.isHidden = false
+        }
+    }
+    
+    func reloadArray(){
+        notesCollection.reloadData()
+        notesTable.reloadData()
+    }
+    
     
     
     
@@ -55,19 +80,21 @@ class NotesViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         notesCollection.register(NotesCollectionViewCell.nib(), forCellWithReuseIdentifier: NotesCollectionViewCell.identifier)
+        notesTable.register(NotesTableViewCell.nib(), forCellReuseIdentifier: NotesTableViewCell.identefier)
         
         getAllItems()
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         notesCollection.collectionViewLayout = layout
         
-        dateFormatter.dateFormat = "dd.MM.yyyy"
+
         
         notesSearchBar.delegate = self
         notesTable.delegate = self
         notesTable.dataSource = self
         notesCollection.delegate = self
         notesCollection.dataSource = self
+        
         
         notesTable.isHidden = true
     }
@@ -132,7 +159,7 @@ extension NotesViewController: UISearchBarDelegate{
 
            }
        }else { self.filteredNotes = self.notes}
-       notesCollection.reloadData()
+       reloadArray()
    }
     
 }
@@ -142,6 +169,7 @@ extension NotesViewController: UISearchBarDelegate{
 extension NotesViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        textIn.text = filteredNotes[indexPath.row].text
         noteIndex = indexPath.row
     }
 }
@@ -152,8 +180,10 @@ extension NotesViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = notesTable.dequeueReusableCell(withIdentifier: "cell") as! NotesTableViewCell
+        let cell = notesTable.dequeueReusableCell(withIdentifier: NotesTableViewCell.identefier) as! NotesTableViewCell
 
+        let note = filteredNotes[indexPath.row]
+        cell.configure(with: note.text!, date: note.date!)
         return cell
     }
     

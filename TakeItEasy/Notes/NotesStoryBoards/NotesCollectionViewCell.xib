@@ -17,17 +17,17 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBC-KX-wg9">
-                        <rect key="frame" x="2" y="2" width="46" height="38"/>
+                        <rect key="frame" x="2" y="2" width="46" height="40"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tls-hg-ttc">
-                        <rect key="frame" x="2" y="40" width="46" height="10"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tls-hg-ttc">
+                        <rect key="frame" x="2" y="42" width="46" height="8"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="10" id="lzl-PM-fD2"/>
+                            <constraint firstAttribute="height" constant="8" id="lzl-PM-fD2"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -44,6 +44,7 @@
                 <constraint firstItem="Tls-hg-ttc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="WM5-Cb-Jai"/>
                 <constraint firstItem="jBC-KX-wg9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="gRB-64-yYz"/>
                 <constraint firstAttribute="trailing" secondItem="jBC-KX-wg9" secondAttribute="trailing" constant="2" id="i7E-yg-YOQ"/>
+                <constraint firstItem="Tls-hg-ttc" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="kad-Oy-JKM"/>
                 <constraint firstItem="jBC-KX-wg9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="mo2-lA-Aju"/>
                 <constraint firstAttribute="trailing" secondItem="Tls-hg-ttc" secondAttribute="trailing" constant="2" id="t9V-cm-kx1"/>
             </constraints>
