@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5652F8452853CF1200A943DF /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652F83E2853CF1200A943DF /* MusicTableViewCell.swift */; };
+		5652F8462853CF1200A943DF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652F83F2853CF1200A943DF /* CustomButton.swift */; };
+		5652F8472853CF1200A943DF /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652F8402853CF1200A943DF /* MusicViewController.swift */; };
+		5652F8482853CF1200A943DF /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652F8412853CF1200A943DF /* MusicPlayerViewController.swift */; };
+		5652F8492853CF1200A943DF /* Music.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5652F8422853CF1200A943DF /* Music.storyboard */; };
+		5652F84A2853CF1200A943DF /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652F8432853CF1200A943DF /* Structs.swift */; };
+		5652F84B2853CF1200A943DF /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5652F8442853CF1200A943DF /* MusicTableViewCell.xib */; };
 		84361561284FFA0E00D835DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84361560284FFA0E00D835DF /* AppDelegate.swift */; };
 		84361563284FFA0E00D835DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84361562284FFA0E00D835DF /* SceneDelegate.swift */; };
 		84361565284FFA0E00D835DF /* SpecificsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84361564284FFA0E00D835DF /* SpecificsViewController.swift */; };
@@ -42,6 +49,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5652F83E2853CF1200A943DF /* MusicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		5652F83F2853CF1200A943DF /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		5652F8402853CF1200A943DF /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		5652F8412853CF1200A943DF /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
+		5652F8422853CF1200A943DF /* Music.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Music.storyboard; sourceTree = "<group>"; };
+		5652F8432853CF1200A943DF /* Structs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		5652F8442853CF1200A943DF /* MusicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicTableViewCell.xib; sourceTree = "<group>"; };
 		8436155D284FFA0E00D835DF /* TakeItEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeItEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84361560284FFA0E00D835DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84361562284FFA0E00D835DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +103,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5652F83D2853CF1200A943DF /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				5652F83E2853CF1200A943DF /* MusicTableViewCell.swift */,
+				5652F83F2853CF1200A943DF /* CustomButton.swift */,
+				5652F8402853CF1200A943DF /* MusicViewController.swift */,
+				5652F8412853CF1200A943DF /* MusicPlayerViewController.swift */,
+				5652F8422853CF1200A943DF /* Music.storyboard */,
+				5652F8432853CF1200A943DF /* Structs.swift */,
+				5652F8442853CF1200A943DF /* MusicTableViewCell.xib */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
 		84361554284FFA0E00D835DF = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +143,7 @@
 				8436156E284FFA0F00D835DF /* LaunchScreen.storyboard */,
 				84361571284FFA0F00D835DF /* Info.plist */,
 				84361569284FFA0E00D835DF /* TakeItEasy.xcdatamodeld */,
+				5652F83D2853CF1200A943DF /* Music */,
 				843615C328524F1B00D835DF /* Login */,
 				843615BF285131D300D835DF /* ObservableObject.swift */,
 				AE22121A285248350091A102 /* Quiz */,
@@ -286,6 +315,7 @@
 				8475A6082852402500FB26B5 /* NotesTableViewCell.xib in Resources */,
 				8475A60A2852402500FB26B5 /* Notes.storyboard in Resources */,
 				84361578284FFAEA00D835DF /* Login.storyboard in Resources */,
+				5652F84B2853CF1200A943DF /* MusicTableViewCell.xib in Resources */,
 				AE22122D28527C3E0091A102 /* questions.json in Resources */,
 				8475A6092852402500FB26B5 /* NotesCollectionViewCell.xib in Resources */,
 				84361570284FFA0F00D835DF /* LaunchScreen.storyboard in Resources */,
@@ -293,6 +323,7 @@
 				84361568284FFA0E00D835DF /* Main.storyboard in Resources */,
 				843616092853880000D835DF /* SearchPage.storyboard in Resources */,
 				AE221223285248350091A102 /* Quiz.storyboard in Resources */,
+				5652F8492853CF1200A943DF /* Music.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5652F8452853CF1200A943DF /* MusicTableViewCell.swift in Sources */,
 				8436162C2853930500D835DF /* CustomTextField.swift in Sources */,
 				8475A60B2852402500FB26B5 /* Note+CoreDataProperties.swift in Sources */,
 				AE221225285248350091A102 /* QuizViewControllerMain.swift in Sources */,
@@ -320,11 +352,15 @@
 				843615C0285131D300D835DF /* ObservableObject.swift in Sources */,
 				AE22122F285280A70091A102 /* QuestionView.swift in Sources */,
 				8475A6072852402500FB26B5 /* NotesTableViewCell.swift in Sources */,
+				5652F84A2853CF1200A943DF /* Structs.swift in Sources */,
 				8436165028539D3600D835DF /* SearchPageViewController.swift in Sources */,
 				8475A60C2852402500FB26B5 /* Note+CoreDataClass.swift in Sources */,
+				5652F8462853CF1200A943DF /* CustomButton.swift in Sources */,
+				5652F8472853CF1200A943DF /* MusicViewController.swift in Sources */,
 				8436157A284FFB2300D835DF /* LoginPageViewController.swift in Sources */,
 				8436156B284FFA0E00D835DF /* TakeItEasy.xcdatamodeld in Sources */,
 				AE88FA8E2852D70100DCC4AD /* MenuCollectionViewCell.swift in Sources */,
+				5652F8482853CF1200A943DF /* MusicPlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
