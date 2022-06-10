@@ -18,6 +18,8 @@
 		8436157A284FFB2300D835DF /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84361579284FFB2300D835DF /* LoginPageViewController.swift */; };
 		8436157C284FFD9700D835DF /* SignUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436157B284FFD9700D835DF /* SignUpPageViewController.swift */; };
 		843615C0285131D300D835DF /* ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843615BF285131D300D835DF /* ObservableObject.swift */; };
+		843616092853880000D835DF /* SearchPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843616082853880000D835DF /* SearchPage.storyboard */; };
+		8436162C2853930500D835DF /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436162B2853930500D835DF /* CustomTextField.swift */; };
 		8475A6052852402500FB26B5 /* NotesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A5FB2852402500FB26B5 /* NotesCollectionViewCell.swift */; };
 		8475A6062852402500FB26B5 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A5FC2852402500FB26B5 /* NotesViewController.swift */; };
 		8475A6072852402500FB26B5 /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A5FD2852402500FB26B5 /* NotesTableViewCell.swift */; };
@@ -52,6 +54,8 @@
 		84361579284FFB2300D835DF /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		8436157B284FFD9700D835DF /* SignUpPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPageViewController.swift; sourceTree = "<group>"; };
 		843615BF285131D300D835DF /* ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObject.swift; sourceTree = "<group>"; };
+		843616082853880000D835DF /* SearchPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchPage.storyboard; sourceTree = "<group>"; };
+		8436162B2853930500D835DF /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		8475A5FB2852402500FB26B5 /* NotesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesCollectionViewCell.swift; sourceTree = "<group>"; };
 		8475A5FC2852402500FB26B5 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		8475A5FD2852402500FB26B5 /* NotesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 				843615BF285131D300D835DF /* ObservableObject.swift */,
 				AE22121A285248350091A102 /* Quiz */,
 				8475A5F92852402500FB26B5 /* Notes */,
+				8436160A2853880700D835DF /* SearchPage */,
 			);
 			path = TakeItEasy;
 			sourceTree = "<group>";
@@ -123,8 +128,17 @@
 				84361577284FFAEA00D835DF /* Login.storyboard */,
 				8436157B284FFD9700D835DF /* SignUpPageViewController.swift */,
 				84361579284FFB2300D835DF /* LoginPageViewController.swift */,
+				8436162B2853930500D835DF /* CustomTextField.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		8436160A2853880700D835DF /* SearchPage */ = {
+			isa = PBXGroup;
+			children = (
+				843616082853880000D835DF /* SearchPage.storyboard */,
+			);
+			path = SearchPage;
 			sourceTree = "<group>";
 		};
 		8475A5F92852402500FB26B5 /* Notes */ = {
@@ -274,6 +288,7 @@
 				84361570284FFA0F00D835DF /* LaunchScreen.storyboard in Resources */,
 				8436156D284FFA0F00D835DF /* Assets.xcassets in Resources */,
 				84361568284FFA0E00D835DF /* Main.storyboard in Resources */,
+				843616092853880000D835DF /* SearchPage.storyboard in Resources */,
 				AE221223285248350091A102 /* Quiz.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8436162C2853930500D835DF /* CustomTextField.swift in Sources */,
 				8475A60B2852402500FB26B5 /* Note+CoreDataProperties.swift in Sources */,
 				AE221225285248350091A102 /* QuizViewControllerMain.swift in Sources */,
 				AE2212372852BE5F0091A102 /* ResultsViewController.swift in Sources */,
