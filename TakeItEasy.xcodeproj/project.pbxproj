@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		84361561284FFA0E00D835DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84361560284FFA0E00D835DF /* AppDelegate.swift */; };
 		84361563284FFA0E00D835DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84361562284FFA0E00D835DF /* SceneDelegate.swift */; };
-		84361565284FFA0E00D835DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84361564284FFA0E00D835DF /* ViewController.swift */; };
+		84361565284FFA0E00D835DF /* SpecificsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84361564284FFA0E00D835DF /* SpecificsViewController.swift */; };
 		84361568284FFA0E00D835DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84361566284FFA0E00D835DF /* Main.storyboard */; };
 		8436156B284FFA0E00D835DF /* TakeItEasy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84361569284FFA0E00D835DF /* TakeItEasy.xcdatamodeld */; };
 		8436156D284FFA0F00D835DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8436156C284FFA0F00D835DF /* Assets.xcassets */; };
@@ -26,17 +26,23 @@
 		8475A60A2852402500FB26B5 /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8475A6012852402500FB26B5 /* Notes.storyboard */; };
 		8475A60B2852402500FB26B5 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A6032852402500FB26B5 /* Note+CoreDataProperties.swift */; };
 		8475A60C2852402500FB26B5 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A6042852402500FB26B5 /* Note+CoreDataClass.swift */; };
-		AE221222285248350091A102 /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE22121C285248350091A102 /* QuestionsViewModel.swift */; };
 		AE221223285248350091A102 /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE22121D285248350091A102 /* Quiz.storyboard */; };
 		AE221224285248350091A102 /* QuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE22121F285248350091A102 /* QuestionsModel.swift */; };
 		AE221225285248350091A102 /* QuizViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE221221285248350091A102 /* QuizViewControllerMain.swift */; };
+		AE2212272852510C0091A102 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2212262852510C0091A102 /* QuestionsViewController.swift */; };
+		AE2212292852548D0091A102 /* QuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2212282852548D0091A102 /* QuizCollectionViewCell.swift */; };
+		AE22122D28527C3E0091A102 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = AE22122C28527C3E0091A102 /* questions.json */; };
+		AE22122F285280A70091A102 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE22122E285280A70091A102 /* QuestionView.swift */; };
+		AE2212352852BC7C0091A102 /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2212342852BC7C0091A102 /* QuestionsViewModel.swift */; };
+		AE2212372852BE5F0091A102 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2212362852BE5F0091A102 /* ResultsViewController.swift */; };
+		AE88FA8E2852D70100DCC4AD /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE88FA8D2852D70100DCC4AD /* MenuCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8436155D284FFA0E00D835DF /* TakeItEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeItEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84361560284FFA0E00D835DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84361562284FFA0E00D835DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84361564284FFA0E00D835DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84361564284FFA0E00D835DF /* SpecificsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificsViewController.swift; sourceTree = "<group>"; };
 		84361567284FFA0E00D835DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8436156A284FFA0E00D835DF /* TakeItEasy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TakeItEasy.xcdatamodel; sourceTree = "<group>"; };
 		8436156C284FFA0F00D835DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,10 +60,16 @@
 		8475A6012852402500FB26B5 /* Notes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notes.storyboard; sourceTree = "<group>"; };
 		8475A6032852402500FB26B5 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8475A6042852402500FB26B5 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
-		AE22121C285248350091A102 /* QuestionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
 		AE22121D285248350091A102 /* Quiz.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
 		AE22121F285248350091A102 /* QuestionsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsModel.swift; sourceTree = "<group>"; };
 		AE221221285248350091A102 /* QuizViewControllerMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewControllerMain.swift; sourceTree = "<group>"; };
+		AE2212262852510C0091A102 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		AE2212282852548D0091A102 /* QuizCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE22122C28527C3E0091A102 /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
+		AE22122E285280A70091A102 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		AE2212342852BC7C0091A102 /* QuestionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
+		AE2212362852BE5F0091A102 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		AE88FA8D2852D70100DCC4AD /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +104,6 @@
 			children = (
 				84361560284FFA0E00D835DF /* AppDelegate.swift */,
 				84361562284FFA0E00D835DF /* SceneDelegate.swift */,
-				84361564284FFA0E00D835DF /* ViewController.swift */,
 				84361566284FFA0E00D835DF /* Main.storyboard */,
 				84361577284FFAEA00D835DF /* Login.storyboard */,
 				8436156C284FFA0F00D835DF /* Assets.xcassets */,
@@ -150,8 +161,9 @@
 		AE22121A285248350091A102 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				AE22121B285248350091A102 /* ViewModel */,
+				AE22122C28527C3E0091A102 /* questions.json */,
 				AE22121D285248350091A102 /* Quiz.storyboard */,
+				AE22121B285248350091A102 /* ViewModel */,
 				AE22121E285248350091A102 /* Models */,
 				AE221220285248350091A102 /* Controller */,
 			);
@@ -161,7 +173,8 @@
 		AE22121B285248350091A102 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				AE22121C285248350091A102 /* QuestionsViewModel.swift */,
+				AE2212342852BC7C0091A102 /* QuestionsViewModel.swift */,
+				AE22122E285280A70091A102 /* QuestionView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -177,7 +190,12 @@
 		AE221220285248350091A102 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AE2212362852BE5F0091A102 /* ResultsViewController.swift */,
+				84361564284FFA0E00D835DF /* SpecificsViewController.swift */,
+				AE2212262852510C0091A102 /* QuestionsViewController.swift */,
 				AE221221285248350091A102 /* QuizViewControllerMain.swift */,
+				AE88FA8D2852D70100DCC4AD /* MenuCollectionViewCell.swift */,
+				AE2212282852548D0091A102 /* QuizCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -243,6 +261,7 @@
 				8475A6082852402500FB26B5 /* NotesTableViewCell.xib in Resources */,
 				8475A60A2852402500FB26B5 /* Notes.storyboard in Resources */,
 				84361578284FFAEA00D835DF /* Login.storyboard in Resources */,
+				AE22122D28527C3E0091A102 /* questions.json in Resources */,
 				8475A6092852402500FB26B5 /* NotesCollectionViewCell.xib in Resources */,
 				84361570284FFA0F00D835DF /* LaunchScreen.storyboard in Resources */,
 				8436156D284FFA0F00D835DF /* Assets.xcassets in Resources */,
@@ -260,19 +279,24 @@
 			files = (
 				8475A60B2852402500FB26B5 /* Note+CoreDataProperties.swift in Sources */,
 				AE221225285248350091A102 /* QuizViewControllerMain.swift in Sources */,
+				AE2212372852BE5F0091A102 /* ResultsViewController.swift in Sources */,
+				AE2212272852510C0091A102 /* QuestionsViewController.swift in Sources */,
 				AE221224285248350091A102 /* QuestionsModel.swift in Sources */,
 				8475A6052852402500FB26B5 /* NotesCollectionViewCell.swift in Sources */,
-				84361565284FFA0E00D835DF /* ViewController.swift in Sources */,
+				84361565284FFA0E00D835DF /* SpecificsViewController.swift in Sources */,
 				84361561284FFA0E00D835DF /* AppDelegate.swift in Sources */,
 				84361563284FFA0E00D835DF /* SceneDelegate.swift in Sources */,
+				AE2212352852BC7C0091A102 /* QuestionsViewModel.swift in Sources */,
+				AE2212292852548D0091A102 /* QuizCollectionViewCell.swift in Sources */,
 				8436157C284FFD9700D835DF /* SignUpPageViewController.swift in Sources */,
 				8475A6062852402500FB26B5 /* NotesViewController.swift in Sources */,
 				843615C0285131D300D835DF /* ObservableObject.swift in Sources */,
+				AE22122F285280A70091A102 /* QuestionView.swift in Sources */,
 				8475A6072852402500FB26B5 /* NotesTableViewCell.swift in Sources */,
 				8475A60C2852402500FB26B5 /* Note+CoreDataClass.swift in Sources */,
 				8436157A284FFB2300D835DF /* LoginPageViewController.swift in Sources */,
 				8436156B284FFA0E00D835DF /* TakeItEasy.xcdatamodeld in Sources */,
-				AE221222285248350091A102 /* QuestionsViewModel.swift in Sources */,
+				AE88FA8E2852D70100DCC4AD /* MenuCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +448,7 @@
 				INFOPLIST_FILE = TakeItEasy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Login;
+				INFOPLIST_KEY_UIMainStoryboardFile = Quiz;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -452,7 +476,7 @@
 				INFOPLIST_FILE = TakeItEasy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Login;
+				INFOPLIST_KEY_UIMainStoryboardFile = Quiz;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

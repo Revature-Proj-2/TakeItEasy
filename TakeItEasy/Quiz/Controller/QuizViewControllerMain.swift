@@ -7,25 +7,56 @@
 
 import UIKit
 
-class QuizViewControllerMain: UIViewController {
+class QuizViewControllerMain: UIViewController{
 
-        var viewModel = QuestionsViewModel()
-        var quesitions:DataModel?
-        
-        override func viewDidLoad() {
+    @IBAction func BeginSelected(_ sender: Any) {
+    }
+    override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
-            viewModel.QuestionData { [weak self] in
-                self?.quesitions = self?.viewModel.questionData
+          
                 
-                DispatchQueue.main.async {
-                  //  self?.tableView.reloadData()
-                }
+    }
+        func updateBorder(myButton: UIButton, borderWidth: CGFloat = 0) {
+            myButton.layer.borderWidth = borderWidth
+            myButton.layer.borderColor = UIColor.white.cgColor            }
                 
-            }
-        }
+    @IBAction func quiz1(_ sender: Any) {
+       
+    }
+    @IBAction func quiz2(_ sender: Any) {
+    }
+    @IBAction func quiz3(_ sender: Any) {
+    }
+    @IBAction func quiz4(_ sender: Any) {
+    }
+    
+    
+    
+    @IBOutlet weak var menuCollection: UICollectionView!
+}
 
 
+
+
+
+
+extension QuizViewControllerMain: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+      
+            guard let sell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenuCollectionViewCell", for: indexPath) as? MenuCollectionViewCell else {return MenuCollectionViewCell()}
+        sell.q1.text = "Quiz1"
+        sell.q2.text = "Quiz2"
+        sell.q3.text = "Quiz3"
+        sell.q4.text = "Quiz4"
+           return sell
     }
 
+
+    
+}
 
