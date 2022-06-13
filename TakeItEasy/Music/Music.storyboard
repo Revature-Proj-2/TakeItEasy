@@ -136,7 +136,9 @@
                                     <constraint firstAttribute="width" constant="50" id="jLX-UH-w1m"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="playpause" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play" catalog="system">
+                                    <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="playPauseTouch:" destination="YSH-8H-FV7" eventType="touchUpInside" id="t8m-5p-E4W"/>
                                 </connections>
@@ -148,7 +150,9 @@
                                     <constraint firstAttribute="width" constant="50" id="crb-QM-PAU"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="stop" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain" image="stop" catalog="system">
+                                    <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="stopTouch:" destination="YSH-8H-FV7" eventType="touchUpInside" id="EDD-0f-gpm"/>
                                 </connections>
@@ -203,9 +207,11 @@
                         <outlet property="albumImage" destination="O0c-Dl-3CY" id="WeS-4b-iUd"/>
                         <outlet property="artist" destination="YfO-uy-O0V" id="mOO-zH-2C3"/>
                         <outlet property="backTrackButton" destination="uq3-et-7Zv" id="Y0r-Ih-V2l"/>
-                        <outlet property="forwardTrackbutton" destination="i5r-yZ-NpX" id="h4r-ZI-gQ3"/>
+                        <outlet property="forwardTrackButton" destination="i5r-yZ-NpX" id="gWR-F6-crX"/>
+                        <outlet property="playPauseButton" destination="FeH-OE-rEg" id="Ijg-Ve-8iX"/>
                         <outlet property="progressSlider" destination="DfE-xf-Ptn" id="EVy-nB-VdB"/>
                         <outlet property="songTitle" destination="7To-SZ-Rfa" id="YuS-gs-YMC"/>
+                        <outlet property="stopButton" destination="8Bx-j6-mGJ" id="dXu-Rb-XTi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IgO-qT-vUO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -217,7 +223,7 @@
         <image name="backward.end" catalog="system" width="128" height="120"/>
         <image name="forward.end" catalog="system" width="128" height="120"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="playpause" catalog="system" width="128" height="80"/>
+        <image name="play" catalog="system" width="120" height="128"/>
         <image name="stop" catalog="system" width="128" height="113"/>
         <namedColor name="Background">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -227,6 +233,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
