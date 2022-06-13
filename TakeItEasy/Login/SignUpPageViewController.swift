@@ -123,8 +123,27 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func getOPTPressed(_ sender: Any) {
         if(allFieldsFilledOut()){
-            signUpButton.isEnabled = true
-            print("send OTP")
+            //signUpButton.isEnabled = true
+            let randomInt = Int.random(in: 1000..<9999)
+            print(randomInt)
+           // let defaultAction = UIAlertAction(title: "Confirm", style: .default){action in}
+            let alert = UIAlertController(title: "OTP", message: "Please provide your One Time Passcode", preferredStyle: .alert)
+            //alert.addAction(defaultAction)
+            alert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: {[weak self] _ in
+                guard let field = alert.textFields?.first, let newText = field.text else{
+                    return
+                }
+                let enteredCode = Int(newText)
+                if(enteredCode == randomInt){
+                    self!.signUpButton.isEnabled = true
+                }else{
+                    let alert = UIAlertController(title: "Error", message: "Incorrect One Time Passcode", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Confirm", style: .default))
+                    self!.present(alert, animated: true)
+                }
+            }))
+            alert.addTextField(configurationHandler: nil)
+            self.present(alert, animated: true)
         }else{
             let defaultAction = UIAlertAction(title: "Ok", style: .default){(action) in}
             let alert = UIAlertController(title: "Error", message: "All Fields must be filled out", preferredStyle: .alert)
