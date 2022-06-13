@@ -14,7 +14,7 @@ class QuestionsViewController: UIViewController {
     var questions:[Questions]?
     var answerSelected = false
     var isCorrectAnswer = false
-    
+    var rightAnswer = 0
     var  points = 0
     var index = 0
     override func viewDidLoad() {
@@ -53,6 +53,7 @@ class QuestionsViewController: UIViewController {
         answerSelected = false
         if isCorrectAnswer {
             points += 5
+            rightAnswer += 1
             print(points)
         }
         print(index)
@@ -64,6 +65,7 @@ class QuestionsViewController: UIViewController {
             // Move the user on the result controller
             guard let vc = storyboard?.instantiateViewController(withIdentifier: "ResultsViewController") as? ResultsViewController else {return}
             vc.result = points
+            vc.rightA = rightAnswer
             self.navigationController?.pushViewController(vc, animated: true)
         }
         
@@ -101,8 +103,21 @@ extension QuestionsViewController: UICollectionViewDataSource, UICollectionViewD
         return cell
     }
     
-
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+    }
     
-
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
     
 }
+
+    
+
+    
+
