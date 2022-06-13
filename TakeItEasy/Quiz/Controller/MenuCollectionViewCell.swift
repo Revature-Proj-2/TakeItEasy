@@ -19,7 +19,4 @@ class MenuCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var quiz3: UIControl!
     
     @IBOutlet weak var quiz4: UIControl!
-
-    
-
 }
