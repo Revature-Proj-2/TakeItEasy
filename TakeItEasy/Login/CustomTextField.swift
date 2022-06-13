@@ -5,21 +5,45 @@
 //  Created by admin on 6/10/22.
 //
 
-import Foundation
+
 import UIKit
 
 class CustomTextField: UITextField {
 
-    convenience init() {
-        self.init(frame: .zero)
-        let border = CALayer()
-        let width = CGFloat(2.0)
-        border.borderColor = UIColor.darkGray.cgColor
-        border.frame = CGRect(x: 0, y: frame.size.height - width, width: frame.size.width, height: frame.size.height)
-        //border.cornerRadius = 20
-        border.borderWidth = width
-        layer.addSublayer(border)
-        layer.masksToBounds = true
+    let padding = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 5)
+    
+    override open func textRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.inset(by: padding)
+    }
+    
+    override open func placeholderRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.inset(by: padding)
+    }
+    override open func editingRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.inset(by: padding)
+    }
+    
+    public override init(frame: CGRect){
+        super.init(frame: frame)
+        setup()
+    }
+    
+    public required init?(coder: NSCoder){
+        super.init(coder: coder)
+        setup()
+    }
+    
+    func setup(){
+        self.layer.cornerRadius = 15.0
+        self.layer.borderWidth = 0.45
+        self.layer.borderColor = UIColor.white.cgColor
+        self.layer.backgroundColor = UIColor.white.cgColor
+        self.layer.borderColor = UIColor.black.withAlphaComponent(0.35).cgColor
+        self.layer.shadowOpacity = 0.8
+        self.layer.shadowRadius = 3.0
+        self.layer.shadowOffset = CGSize(width: 0, height: 3)
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.masksToBounds = false
     }
 
 }
