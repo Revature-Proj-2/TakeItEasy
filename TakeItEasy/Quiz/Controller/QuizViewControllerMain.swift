@@ -9,15 +9,17 @@ import UIKit
 
 class QuizViewControllerMain: UIViewController{
 
-    @IBAction func BeginSelected(_ sender: Any) {
-    }
     override func viewDidLoad() {
             super.viewDidLoad()
-            // Do any additional setup after loading the view.
+        DbHelperLite.dbHelper.createDB()
+        DbHelperLite.dbHelper.createTable()
+       
           
                 
     }
-        func updateBorder(myButton: UIButton, borderWidth: CGFloat = 0) {
+    @IBAction func quizSelect(_ sender: Any) {
+    }
+    func updateBorder(myButton: UIButton, borderWidth: CGFloat = 0) {
             myButton.layer.borderWidth = borderWidth
             myButton.layer.borderColor = UIColor.white.cgColor            }
                 

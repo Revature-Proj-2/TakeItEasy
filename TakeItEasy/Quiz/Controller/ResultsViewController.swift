@@ -9,14 +9,22 @@ import UIKit
 
 class ResultsViewController: UIViewController {
 
+    @IBAction func tryAgain(_ sender: Any) {
+    }
+    @IBAction func backHome(_ sender: Any) {
+    }
+    
     @IBOutlet weak var resultLabel: UILabel!
     
-    var result = 0
+    @IBOutlet weak var rightAnswer: UILabel!
     
+    var result = 0
+    var rightA = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         resultLabel.text = "\(result)"
-        // Do any additional setup after loading the view.
+        rightAnswer.text = "\(rightA)"
     }
 
     

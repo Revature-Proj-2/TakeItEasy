@@ -21,6 +21,7 @@ struct QuestionsModel: Codable {
 
 
 struct Questions: Codable {
+    var id: Int?
     var correct_answer: String?
     var option_1: String?
     var option_2: String?

@@ -46,6 +46,7 @@
 		AE2212352852BC7C0091A102 /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2212342852BC7C0091A102 /* QuestionsViewModel.swift */; };
 		AE2212372852BE5F0091A102 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2212362852BE5F0091A102 /* ResultsViewController.swift */; };
 		AE88FA8E2852D70100DCC4AD /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE88FA8D2852D70100DCC4AD /* MenuCollectionViewCell.swift */; };
+		AEAA3D7D2855A40300A5CF89 /* DbHelperLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAA3D7C2855A40300A5CF89 /* DbHelperLite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		AE2212342852BC7C0091A102 /* QuestionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
 		AE2212362852BE5F0091A102 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		AE88FA8D2852D70100DCC4AD /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		AEAA3D7C2855A40300A5CF89 /* DbHelperLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbHelperLite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 			children = (
 				AE22122C28527C3E0091A102 /* questions.json */,
 				AE22121D285248350091A102 /* Quiz.storyboard */,
+				AEAA3D7C2855A40300A5CF89 /* DbHelperLite.swift */,
 				AE22121B285248350091A102 /* ViewModel */,
 				AE22121E285248350091A102 /* Models */,
 				AE221220285248350091A102 /* Controller */,
@@ -352,6 +355,7 @@
 				843615C0285131D300D835DF /* ObservableObject.swift in Sources */,
 				AE22122F285280A70091A102 /* QuestionView.swift in Sources */,
 				8475A6072852402500FB26B5 /* NotesTableViewCell.swift in Sources */,
+				AEAA3D7D2855A40300A5CF89 /* DbHelperLite.swift in Sources */,
 				5652F84A2853CF1200A943DF /* Structs.swift in Sources */,
 				8436165028539D3600D835DF /* SearchPageViewController.swift in Sources */,
 				8475A60C2852402500FB26B5 /* Note+CoreDataClass.swift in Sources */,
