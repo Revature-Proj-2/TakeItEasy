@@ -13,6 +13,7 @@ struct Song{
     let albumName:String
     let albumImageName:String
     let mediaSource:String
+    let url:URL
 }
 
 struct CellViewModel{
@@ -25,4 +26,5 @@ struct MusicPlayerViewModel{
     let title:String
     let artist:String
     let imageName:String
+    let url:URL
 }

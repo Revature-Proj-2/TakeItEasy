@@ -3,6 +3,7 @@
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -61,11 +62,11 @@
                                     <constraint firstAttribute="width" constant="70" id="pvK-9q-4KQ"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="magnifyingglass" catalog="system" title="Search"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nDi-Dx-unN"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="nDi-Dx-unN" firstAttribute="trailing" secondItem="Bl9-vh-xPq" secondAttribute="trailing" constant="20" id="05r-rf-iL1"/>
                             <constraint firstItem="Bl9-vh-xPq" firstAttribute="leading" secondItem="nDi-Dx-unN" secondAttribute="leading" constant="20" id="1BF-mX-BbD"/>
@@ -167,18 +168,18 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfO-uy-O0V">
                                 <rect key="frame" x="169" y="326" width="90" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="Text"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7To-SZ-Rfa">
                                 <rect key="frame" x="149" y="272" width="130" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="Text"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hc1-Gx-YnR"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="i5r-yZ-NpX" firstAttribute="centerX" secondItem="Cjo-ha-4nh" secondAttribute="centerX" constant="75" id="09P-Xa-10C"/>
                             <constraint firstItem="O0c-Dl-3CY" firstAttribute="centerX" secondItem="Cjo-ha-4nh" secondAttribute="centerX" id="4ig-kI-BdI"/>
@@ -201,6 +202,8 @@
                     <connections>
                         <outlet property="albumImage" destination="O0c-Dl-3CY" id="WeS-4b-iUd"/>
                         <outlet property="artist" destination="YfO-uy-O0V" id="mOO-zH-2C3"/>
+                        <outlet property="backTrackButton" destination="uq3-et-7Zv" id="Y0r-Ih-V2l"/>
+                        <outlet property="forwardTrackbutton" destination="i5r-yZ-NpX" id="h4r-ZI-gQ3"/>
                         <outlet property="progressSlider" destination="DfE-xf-Ptn" id="EVy-nB-VdB"/>
                         <outlet property="songTitle" destination="7To-SZ-Rfa" id="YuS-gs-YMC"/>
                     </connections>
@@ -213,8 +216,15 @@
     <resources>
         <image name="backward.end" catalog="system" width="128" height="120"/>
         <image name="forward.end" catalog="system" width="128" height="120"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="playpause" catalog="system" width="128" height="80"/>
         <image name="stop" catalog="system" width="128" height="113"/>
+        <namedColor name="Background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
