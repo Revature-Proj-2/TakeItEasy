@@ -49,7 +49,10 @@ class LoginPageViewController: UIViewController {
                     userDefault.set("no", forKey: "takeItEasyRememberMe")
                     userDefault.set("", forKey: "takeItEasyUserName")
                 }
-                print("transition to next page here")
+                //print("transition to next page here")
+                let storyBoard = UIStoryboard(name: "TabController", bundle: nil)
+                let page = storyBoard.instantiateViewController(withIdentifier: "Controller")
+                show(page, sender: Any?.self)
             }
         }else{
             let defaultAction = UIAlertAction(title: "Ok", style: .default){(action) in}

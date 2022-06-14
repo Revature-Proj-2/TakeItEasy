@@ -36,6 +36,7 @@
 		8475A60A2852402500FB26B5 /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8475A6012852402500FB26B5 /* Notes.storyboard */; };
 		8475A60B2852402500FB26B5 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A6032852402500FB26B5 /* Note+CoreDataProperties.swift */; };
 		8475A60C2852402500FB26B5 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A6042852402500FB26B5 /* Note+CoreDataClass.swift */; };
+		84FF876D2858EDDB00AF34BC /* TabController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FF876C2858EDDB00AF34BC /* TabController.storyboard */; };
 		AE221223285248350091A102 /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE22121D285248350091A102 /* Quiz.storyboard */; };
 		AE221224285248350091A102 /* QuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE22121F285248350091A102 /* QuestionsModel.swift */; };
 		AE221225285248350091A102 /* QuizViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE221221285248350091A102 /* QuizViewControllerMain.swift */; };
@@ -81,6 +82,7 @@
 		8475A6012852402500FB26B5 /* Notes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notes.storyboard; sourceTree = "<group>"; };
 		8475A6032852402500FB26B5 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8475A6042852402500FB26B5 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		84FF876C2858EDDB00AF34BC /* TabController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabController.storyboard; sourceTree = "<group>"; };
 		AE22121D285248350091A102 /* Quiz.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
 		AE22121F285248350091A102 /* QuestionsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsModel.swift; sourceTree = "<group>"; };
 		AE221221285248350091A102 /* QuizViewControllerMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewControllerMain.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				8436156C284FFA0F00D835DF /* Assets.xcassets */,
 				8436156E284FFA0F00D835DF /* LaunchScreen.storyboard */,
 				84361571284FFA0F00D835DF /* Info.plist */,
+				84FF876E2858EDFC00AF34BC /* TabController */,
 				84361569284FFA0E00D835DF /* TakeItEasy.xcdatamodeld */,
 				5652F83D2853CF1200A943DF /* Music */,
 				843615C328524F1B00D835DF /* Login */,
@@ -212,6 +215,14 @@
 				8475A6042852402500FB26B5 /* Note+CoreDataClass.swift */,
 			);
 			path = NotesData;
+			sourceTree = "<group>";
+		};
+		84FF876E2858EDFC00AF34BC /* TabController */ = {
+			isa = PBXGroup;
+			children = (
+				84FF876C2858EDDB00AF34BC /* TabController.storyboard */,
+			);
+			path = TabController;
 			sourceTree = "<group>";
 		};
 		AE22121A285248350091A102 /* Quiz */ = {
@@ -324,6 +335,7 @@
 				84361570284FFA0F00D835DF /* LaunchScreen.storyboard in Resources */,
 				8436156D284FFA0F00D835DF /* Assets.xcassets in Resources */,
 				84361568284FFA0E00D835DF /* Main.storyboard in Resources */,
+				84FF876D2858EDDB00AF34BC /* TabController.storyboard in Resources */,
 				843616092853880000D835DF /* SearchPage.storyboard in Resources */,
 				AE221223285248350091A102 /* Quiz.storyboard in Resources */,
 				5652F8492853CF1200A943DF /* Music.storyboard in Resources */,

@@ -7,8 +7,9 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
-class SignUpPageViewController: UIViewController, UITextFieldDelegate {
+class SignUpPageViewController: UIViewController, UITextFieldDelegate, UNUserNotificationCenterDelegate {
 
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var getOPT: UIButton!
@@ -27,7 +28,7 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
-    
+    //use regex to make sure password meets requirements
     func isValidPassword(_ str : String) -> Bool {
         let password = str
         let pswdRegex = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&<>*~:`-]).{8,}$"
@@ -35,6 +36,7 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate {
         return pswdCheck.evaluate(with: password)
     }
     
+    //use regex to make sure email meets requirements
     func isValidEmail(_ str : String) -> Bool {
         let email = str
         let emailRegex = #".+\@.+\..+"#
@@ -42,6 +44,7 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate {
         return emailCheck.evaluate(with: email)
     }
     
+    //function to make sure all fields are filled out correctly
     func allFieldsFilledOut() -> Bool {
         if(nameField.text != "" && isValidEmail(emailField.text!) && phoneNumberField.text != "" && isValidPassword(passwordField.text!) && passwordField.text == reEnterPasswordField.text){
             return true
@@ -57,9 +60,16 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate {
         phoneNumberField.delegate = self
         emailField.delegate = self
         nameField.delegate = self
+        UNUserNotificationCenter.current().delegate = self
 
         // Do any additional setup after loading the view.
     }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.banner])
+    }
+    
+    
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         
@@ -123,12 +133,29 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func getOPTPressed(_ sender: Any) {
         if(allFieldsFilledOut()){
-            //signUpButton.isEnabled = true
             let randomInt = Int.random(in: 1000..<9999)
-            print(randomInt)
-           // let defaultAction = UIAlertAction(title: "Confirm", style: .default){action in}
+            UNUserNotificationCenter.current().getNotificationSettings{ notify in
+                switch notify.authorizationStatus{
+                case .notDetermined:
+                    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]){
+                        granted , err in
+                        if let error = err{
+                            print("error in permission", error)
+                        }
+                        self.generateNotification(randomInt)
+                        
+                    }
+                case .authorized:
+                    self.generateNotification(randomInt)
+                case .denied:
+                    print("permission not given")
+                default:
+                    print("default")
+                }
+                
+            }
+            //generateNotification(randomInt)
             let alert = UIAlertController(title: "OTP", message: "Please provide your One Time Passcode", preferredStyle: .alert)
-            //alert.addAction(defaultAction)
             alert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: {[weak self] _ in
                 guard let field = alert.textFields?.first, let newText = field.text else{
                     return
@@ -144,12 +171,27 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate {
             }))
             alert.addTextField(configurationHandler: nil)
             self.present(alert, animated: true)
-        }else{
+        }
+        
+        
+        else{
             let defaultAction = UIAlertAction(title: "Ok", style: .default){(action) in}
             let alert = UIAlertController(title: "Error", message: "All Fields must be filled out", preferredStyle: .alert)
             alert.addAction(defaultAction)
             self.present(alert, animated: true)
         }
+    }
+    
+    func generateNotification(_ num : Int){
+        let OTP = String(num)
+        let content = UNMutableNotificationContent()
+        content.title = "Take it easy"
+        content.subtitle = "Your One Time Passcode"
+        content.body = OTP
+        let timeInterval = UNTimeIntervalNotificationTrigger(timeInterval: 2.0, repeats: false)
+        let request = UNNotificationRequest(identifier: "User_App_Notification", content: content, trigger: timeInterval)
+        UNUserNotificationCenter.current().add(request)
+        
     }
     
     func createUser(_ userName : String){
