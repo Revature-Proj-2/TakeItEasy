@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5652F8452853CF1200A943DF /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652F83E2853CF1200A943DF /* MusicTableViewCell.swift */; };
 		5652F8462853CF1200A943DF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652F83F2853CF1200A943DF /* CustomButton.swift */; };
-		5652F8472853CF1200A943DF /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652F8402853CF1200A943DF /* MusicViewController.swift */; };
 		5652F8482853CF1200A943DF /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652F8412853CF1200A943DF /* MusicPlayerViewController.swift */; };
 		5652F8492853CF1200A943DF /* Music.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5652F8422853CF1200A943DF /* Music.storyboard */; };
 		5652F84A2853CF1200A943DF /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5652F8432853CF1200A943DF /* Structs.swift */; };
-		5652F84B2853CF1200A943DF /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5652F8442853CF1200A943DF /* MusicTableViewCell.xib */; };
 		566C09112856D67C0019CA53 /* 35. The Best The World Had To Offer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 566C090F2856D67C0019CA53 /* 35. The Best The World Had To Offer.mp3 */; };
 		566C09122856D67C0019CA53 /* 24. Troubled Water.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 566C09102856D67C0019CA53 /* 24. Troubled Water.mp3 */; };
 		566C09152857906E0019CA53 /* 11. Firestorm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 566C09142857906E0019CA53 /* 11. Firestorm.mp3 */; };
+		566DDCF52858F07A00F43FED /* MusicCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566DDCF42858F07A00F43FED /* MusicCollectionViewController.swift */; };
+		566DDCF92858F0C000F43FED /* MusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566DDCF82858F0C000F43FED /* MusicCollectionViewCell.swift */; };
 		84361561284FFA0E00D835DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84361560284FFA0E00D835DF /* AppDelegate.swift */; };
 		84361563284FFA0E00D835DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84361562284FFA0E00D835DF /* SceneDelegate.swift */; };
 		84361565284FFA0E00D835DF /* SpecificsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84361564284FFA0E00D835DF /* SpecificsViewController.swift */; };
@@ -52,16 +51,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5652F83E2853CF1200A943DF /* MusicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 		5652F83F2853CF1200A943DF /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		5652F8402853CF1200A943DF /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		5652F8412853CF1200A943DF /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
 		5652F8422853CF1200A943DF /* Music.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Music.storyboard; sourceTree = "<group>"; };
 		5652F8432853CF1200A943DF /* Structs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
-		5652F8442853CF1200A943DF /* MusicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicTableViewCell.xib; sourceTree = "<group>"; };
 		566C090F2856D67C0019CA53 /* 35. The Best The World Had To Offer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "35. The Best The World Had To Offer.mp3"; sourceTree = "<group>"; };
 		566C09102856D67C0019CA53 /* 24. Troubled Water.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "24. Troubled Water.mp3"; sourceTree = "<group>"; };
 		566C09142857906E0019CA53 /* 11. Firestorm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "11. Firestorm.mp3"; sourceTree = "<group>"; };
+		566DDCF42858F07A00F43FED /* MusicCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCollectionViewController.swift; sourceTree = "<group>"; };
+		566DDCF82858F0C000F43FED /* MusicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCollectionViewCell.swift; sourceTree = "<group>"; };
 		8436155D284FFA0E00D835DF /* TakeItEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeItEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84361560284FFA0E00D835DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84361562284FFA0E00D835DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,13 +111,12 @@
 			isa = PBXGroup;
 			children = (
 				566C09132856D6890019CA53 /* Temp Tracks */,
-				5652F83E2853CF1200A943DF /* MusicTableViewCell.swift */,
 				5652F83F2853CF1200A943DF /* CustomButton.swift */,
-				5652F8402853CF1200A943DF /* MusicViewController.swift */,
-				5652F8412853CF1200A943DF /* MusicPlayerViewController.swift */,
 				5652F8422853CF1200A943DF /* Music.storyboard */,
 				5652F8432853CF1200A943DF /* Structs.swift */,
-				5652F8442853CF1200A943DF /* MusicTableViewCell.xib */,
+				566DDCF42858F07A00F43FED /* MusicCollectionViewController.swift */,
+				566DDCF82858F0C000F43FED /* MusicCollectionViewCell.swift */,
+				5652F8412853CF1200A943DF /* MusicPlayerViewController.swift */,
 			);
 			path = Music;
 			sourceTree = "<group>";
@@ -334,7 +331,6 @@
 				8475A6082852402500FB26B5 /* NotesTableViewCell.xib in Resources */,
 				8475A60A2852402500FB26B5 /* Notes.storyboard in Resources */,
 				84361578284FFAEA00D835DF /* Login.storyboard in Resources */,
-				5652F84B2853CF1200A943DF /* MusicTableViewCell.xib in Resources */,
 				AE22122D28527C3E0091A102 /* questions.json in Resources */,
 				8475A6092852402500FB26B5 /* NotesCollectionViewCell.xib in Resources */,
 				84361570284FFA0F00D835DF /* LaunchScreen.storyboard in Resources */,
@@ -354,7 +350,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5652F8452853CF1200A943DF /* MusicTableViewCell.swift in Sources */,
 				8436162C2853930500D835DF /* CustomTextField.swift in Sources */,
 				8475A60B2852402500FB26B5 /* Note+CoreDataProperties.swift in Sources */,
 				AE221225285248350091A102 /* QuizViewControllerMain.swift in Sources */,
@@ -364,6 +359,8 @@
 				8475A6052852402500FB26B5 /* NotesCollectionViewCell.swift in Sources */,
 				84361565284FFA0E00D835DF /* SpecificsViewController.swift in Sources */,
 				84361561284FFA0E00D835DF /* AppDelegate.swift in Sources */,
+				566DDCF92858F0C000F43FED /* MusicCollectionViewCell.swift in Sources */,
+				566DDCF52858F07A00F43FED /* MusicCollectionViewController.swift in Sources */,
 				84361563284FFA0E00D835DF /* SceneDelegate.swift in Sources */,
 				AE2212352852BC7C0091A102 /* QuestionsViewModel.swift in Sources */,
 				AE2212292852548D0091A102 /* QuizCollectionViewCell.swift in Sources */,
@@ -376,7 +373,6 @@
 				8436165028539D3600D835DF /* SearchPageViewController.swift in Sources */,
 				8475A60C2852402500FB26B5 /* Note+CoreDataClass.swift in Sources */,
 				5652F8462853CF1200A943DF /* CustomButton.swift in Sources */,
-				5652F8472853CF1200A943DF /* MusicViewController.swift in Sources */,
 				8436157A284FFB2300D835DF /* LoginPageViewController.swift in Sources */,
 				8436156B284FFA0E00D835DF /* TakeItEasy.xcdatamodeld in Sources */,
 				AE88FA8E2852D70100DCC4AD /* MenuCollectionViewCell.swift in Sources */,

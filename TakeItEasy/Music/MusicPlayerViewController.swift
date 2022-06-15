@@ -18,6 +18,8 @@ class MusicPlayerViewController: UIViewController {
     @IBOutlet weak var forwardTrackButton: UIButton!
     @IBOutlet weak var playPauseButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var source: UILabel!
+    
     var vModel: MusicPlayerViewModel?
     var fileURL:URL?
     var audioPlayer:AVAudioPlayer?
@@ -31,14 +33,22 @@ class MusicPlayerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        songs = songsPlayList.object(forKey: "songData") as? [Song]
-        self.initializeData(with: vModel!)
+        
+        //self.initializeData(with: vModel!)
         // Do any additional setup after loading the view.
     }
+//    func firstLoad() async{
+//        do{
+//        try await Task.sleep(nanoseconds: 400)
+//        self.initializeData(with: vModel!)
+//        }catch{
+//            print("Error Loading Media Player")
+//        }
+//    }
     override func viewDidDisappear(_ animated: Bool) {
         timer?.invalidate()
         audioPlayer?.stop()
     }
-    
     public func initializeData(with viewModel: MusicPlayerViewModel){
         if index == 0{
             //backTrackButton.backgroundColor = UIColor.systemGray
@@ -56,11 +66,13 @@ class MusicPlayerViewController: UIViewController {
             forwardTrackButton.setImage(UIImage(systemName: "forward.end"), for: .normal)
         }
         playPauseButton.setImage(UIImage(systemName: "play"), for: .normal)
+        stopButton.setImage(UIImage(systemName: "stop"), for: .normal)
         isPlaying = false
         progressSlider.value = 0
         albumImage.image = UIImage(named: viewModel.imageName)
         songTitle.text = viewModel.title
         artist.text = viewModel.artist
+        source.text = viewModel.source
         fileURL = viewModel.url
         do{
             audioPlayer = try AVAudioPlayer(contentsOf:fileURL!)
@@ -78,7 +90,7 @@ class MusicPlayerViewController: UIViewController {
         }else{
             index = index! - 1
             let model = songs![index!]
-            let viewModel = MusicPlayerViewModel(title: model.title, artist: model.artist, imageName: model.albumImageName, url:model.url)
+            let viewModel = MusicPlayerViewModel(title: model.title, artist: model.artist, imageName: model.albumImageName,source: model.mediaSource, url: model.url)
             self.initializeData(with: viewModel)
         }
     }
@@ -88,7 +100,7 @@ class MusicPlayerViewController: UIViewController {
         }else{
             index = index! + 1
             let model = songs![index!]
-            let viewModel = MusicPlayerViewModel(title: model.title, artist: model.artist, imageName: model.albumImageName,url:model.url)
+            let viewModel = MusicPlayerViewModel(title: model.title, artist: model.artist, imageName: model.albumImageName,source: model.mediaSource, url: model.url)
             self.initializeData(with: viewModel)
         }
     }
