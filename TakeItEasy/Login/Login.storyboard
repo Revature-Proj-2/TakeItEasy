@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -48,7 +49,7 @@
                                 <rect key="frame" x="166" y="314" width="112" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="Text"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tw5-GT-WFE">
@@ -57,6 +58,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Log In">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" name="Button"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="logInButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vAv-DV-kbx"/>
@@ -68,6 +71,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Sign Up">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" name="Button"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="eU1-bE-lP3" kind="show" id="NqK-II-Nla"/>
@@ -75,9 +80,11 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <color key="backgroundColor" name="Background"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Utb-8s-VqH"/>
+                    <navigationItem key="navigationItem" id="Utb-8s-VqH">
+                        <barButtonItem key="backBarButtonItem" title="Log Out" id="OVT-Xe-rOG"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="passwordField" destination="LbL-b9-Ez6" id="D9x-3p-mEY"/>
                         <outlet property="rememberMeSwitch" destination="4tD-85-S0d" id="Vbg-Js-m5y"/>
@@ -171,29 +178,27 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVd-zQ-1bb">
-                                <rect key="frame" x="145" y="616" width="124" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="PLX-hr-qYK"/>
-                                    <constraint firstAttribute="width" constant="124" id="fsS-NS-bN2"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVd-zQ-1bb">
+                                <rect key="frame" x="145" y="616" width="138" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Get OTP">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" name="Button"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="getOPTPressed:" destination="eU1-bE-lP3" eventType="touchUpInside" id="CaW-Uq-HPD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24o-vB-njp">
-                                <rect key="frame" x="145" y="725" width="124" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="124" id="4ym-7C-wbc"/>
-                                    <constraint firstAttribute="height" constant="60" id="skj-Gt-Voh"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24o-vB-njp">
+                                <rect key="frame" x="145" y="725" width="138" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Sign Up">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" name="Button"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="signUpButtonPressed:" destination="eU1-bE-lP3" eventType="touchUpInside" id="syO-dU-mEs"/>
@@ -247,10 +252,9 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ybt-Zd-Lvn"/>
-                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="olg-wT-OWh" firstAttribute="top" secondItem="J4M-s6-mMw" secondAttribute="bottom" constant="43" id="0WF-x0-YbR"/>
-                            <constraint firstItem="24o-vB-njp" firstAttribute="top" secondItem="CVd-zQ-1bb" secondAttribute="bottom" constant="49" id="15y-dQ-ZVu"/>
                             <constraint firstItem="z7W-J5-lOn" firstAttribute="leading" secondItem="J4M-s6-mMw" secondAttribute="leading" id="24I-a9-BwA"/>
                             <constraint firstItem="z7W-J5-lOn" firstAttribute="leading" secondItem="OW5-1N-JOR" secondAttribute="leading" id="4IG-2H-uhw"/>
                             <constraint firstItem="olg-wT-OWh" firstAttribute="centerX" secondItem="zK7-oh-zmo" secondAttribute="centerX" id="5YV-bK-Q9M"/>
@@ -263,18 +267,13 @@
                             <constraint firstItem="L1l-jn-d5b" firstAttribute="top" secondItem="Ybt-Zd-Lvn" secondAttribute="top" constant="58" id="MSt-gG-IsJ"/>
                             <constraint firstItem="OW5-1N-JOR" firstAttribute="top" secondItem="lKF-WI-bz4" secondAttribute="bottom" constant="3" id="O2N-lD-qGo"/>
                             <constraint firstItem="3Uh-fZ-yUf" firstAttribute="centerX" secondItem="PSy-mE-lZF" secondAttribute="centerX" id="OqA-pp-LOj"/>
-                            <constraint firstItem="3Uh-fZ-yUf" firstAttribute="centerX" secondItem="CVd-zQ-1bb" secondAttribute="centerX" id="PQa-IZ-tyA"/>
                             <constraint firstItem="z7W-J5-lOn" firstAttribute="leading" secondItem="tD6-Sy-Qbi" secondAttribute="leading" id="SJh-t4-1ck"/>
                             <constraint firstItem="J4M-s6-mMw" firstAttribute="centerX" secondItem="zK7-oh-zmo" secondAttribute="centerX" id="UZD-Ib-A9Y"/>
                             <constraint firstItem="tD6-Sy-Qbi" firstAttribute="top" secondItem="PSy-mE-lZF" secondAttribute="bottom" constant="3" id="ZMq-wA-QVQ"/>
                             <constraint firstItem="lKF-WI-bz4" firstAttribute="top" secondItem="PSy-mE-lZF" secondAttribute="bottom" constant="43" id="aHk-vM-KSA"/>
                             <constraint firstItem="t3f-NW-ncn" firstAttribute="top" secondItem="L1l-jn-d5b" secondAttribute="bottom" constant="3" id="adv-YF-syu"/>
-                            <constraint firstItem="CVd-zQ-1bb" firstAttribute="centerX" secondItem="zK7-oh-zmo" secondAttribute="centerX" id="aui-X7-aKV"/>
                             <constraint firstItem="PSy-mE-lZF" firstAttribute="top" secondItem="olg-wT-OWh" secondAttribute="bottom" constant="43" id="bDd-1R-L5f"/>
-                            <constraint firstItem="Ybt-Zd-Lvn" firstAttribute="bottom" secondItem="24o-vB-njp" secondAttribute="bottom" constant="77" id="iHn-iR-wnL"/>
                             <constraint firstItem="J4M-s6-mMw" firstAttribute="top" secondItem="L1l-jn-d5b" secondAttribute="bottom" constant="43" id="jAm-IK-AXj"/>
-                            <constraint firstItem="3Uh-fZ-yUf" firstAttribute="centerX" secondItem="24o-vB-njp" secondAttribute="centerX" id="sn7-ae-x7D"/>
-                            <constraint firstItem="24o-vB-njp" firstAttribute="centerX" secondItem="zK7-oh-zmo" secondAttribute="centerX" id="znp-q4-xxq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dWb-Sf-WBS"/>
@@ -317,9 +316,15 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <namedColor name="Background">
+            <color red="0.89411764705882357" green="0.94509803921568625" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Button">
+            <color red="0.0" green="0.71764705882352942" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
