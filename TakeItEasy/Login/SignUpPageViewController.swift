@@ -61,6 +61,8 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate, UNUserNot
         emailField.delegate = self
         nameField.delegate = self
         UNUserNotificationCenter.current().delegate = self
+        //self.navigationController!.navigationBar.topItem!.title = "Back"
+        self.navigationController!.navigationBar.topItem?.backBarButtonItem?.title = "Back"
 
         // Do any additional setup after loading the view.
     }
@@ -69,8 +71,7 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate, UNUserNot
         completionHandler([.banner])
     }
     
-    
-    
+    //show/hide requirement texts if conditions are/are not met
     func textFieldDidBeginEditing(_ textField: UITextField) {
         
         switch textField {
@@ -86,14 +87,39 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate, UNUserNot
     func textFieldDidChangeSelection(_ textField: UITextField) {
         
         switch textField{
+        case nameField:
+            if(nameField.text == ""){
+                nameReqText.isHidden = false
+            }else{
+                nameReqText.isHidden = true
+            }
+        case emailField:
+            if(emailField.text?.range(of: #".+\@.+\..+"#, options: .regularExpression) != nil){
+                emailReqText.isHidden = true
+            }else{
+                emailReqText.isHidden = false
+            }
         case reEnterPasswordField:
             if textField.text != passwordField.text {
-                passwordMatchLabel.textColor = .red
+                passwordMatchLabel.textColor = .systemRed
+                passwordMatchLabel.text = "Passwords must match"
             }else{
-                passwordMatchLabel.textColor = .black
+                passwordMatchLabel.textColor = UIColor(named: "Text")
                 passwordMatchLabel.text = "Passwords Match"
             }
-
+        case passwordField:
+            if(isValidPassword(passwordField.text!)){
+                passwordReqText.textColor = .black
+                passwordReqText.isHidden = true
+            }else{
+                passwordReqText.textColor = .systemRed
+            }
+        case phoneNumberField:
+            if(phoneNumberField.text == ""){
+                phoneReqText.isHidden = false
+            }else{
+                phoneReqText.isHidden = true
+            }
         default:
             print("default")
         }
@@ -106,7 +132,7 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate, UNUserNot
                 passwordReqText.textColor = .black
                 passwordReqText.isHidden = true
             }else{
-                passwordReqText.textColor = .red
+                passwordReqText.textColor = .systemRed
             }
         case nameField:
             if(nameField.text == ""){
@@ -133,6 +159,7 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate, UNUserNot
     
     @IBAction func getOPTPressed(_ sender: Any) {
         if(allFieldsFilledOut()){
+            //random 4 digit number to send as OTP
             let randomInt = Int.random(in: 1000..<9999)
             UNUserNotificationCenter.current().getNotificationSettings{ notify in
                 switch notify.authorizationStatus{
@@ -154,13 +181,13 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate, UNUserNot
                 }
                 
             }
-            //generateNotification(randomInt)
             let alert = UIAlertController(title: "OTP", message: "Please provide your One Time Passcode", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: {[weak self] _ in
                 guard let field = alert.textFields?.first, let newText = field.text else{
                     return
                 }
                 let enteredCode = Int(newText)
+                //enable sign up button if OTP matches
                 if(enteredCode == randomInt){
                     self!.signUpButton.isEnabled = true
                 }else{
@@ -194,6 +221,7 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate, UNUserNot
         
     }
     
+    //create user in core data on successful sign up
     func createUser(_ userName : String){
         do{
             let request = User.fetchRequest() as NSFetchRequest<User>

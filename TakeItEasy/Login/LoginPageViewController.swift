@@ -15,6 +15,8 @@ class LoginPageViewController: UIViewController {
     
     let userDefault = UserDefaults.standard
     
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if userDefault.string(forKey: "takeItEasyRememberMe") == "yes"{

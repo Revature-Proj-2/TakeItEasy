@@ -28,10 +28,10 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Sp9-7X-0zU" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="dee-Q1-Jk8"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Sp9-7X-0zU" secondAttribute="bottom" id="mgV-E3-SiJ"/>
-                            <constraint firstItem="Sp9-7X-0zU" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="nXc-bL-zAq"/>
-                            <constraint firstItem="Sp9-7X-0zU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="qFz-56-bpy"/>
+                            <constraint firstItem="Sp9-7X-0zU" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="88J-4c-pKQ"/>
+                            <constraint firstItem="Sp9-7X-0zU" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="QTx-lo-WNv"/>
+                            <constraint firstItem="Sp9-7X-0zU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="UIx-6w-Kob"/>
+                            <constraint firstItem="Sp9-7X-0zU" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="bw5-Hm-CQP"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="safari.fill" catalog="system" id="86g-Wk-vJF"/>
