@@ -11,7 +11,12 @@ class MusicCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var albumImage: UIImageView!
     @IBOutlet weak var songTitle: UILabel!
     public func initalizeCell(with viewModel:CellViewModel){
-        albumImage.image = UIImage(named:viewModel.imageName)
+        let url = URL(string: viewModel.image)
+        let data = try? Data(contentsOf: url!)
+
+        if let imageData = data {
+            albumImage.image = UIImage(data: imageData)
+        }
         songTitle.text = viewModel.title
     }
 }

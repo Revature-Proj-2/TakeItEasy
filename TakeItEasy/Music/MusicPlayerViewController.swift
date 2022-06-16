@@ -22,16 +22,19 @@ class MusicPlayerViewController: UIViewController {
     
     var vModel: MusicPlayerViewModel?
     var fileURL:URL?
-    var audioPlayer:AVAudioPlayer?
+    var audioPlayer:AVPlayer?
+    var playerItem:AVPlayerItem?
     var timer:Timer?
     var isPlaying:Bool = false
-    var songsPlayList = UserDefaults.standard
-    var songs:[Song]?
+//    var songsPlayList = UserDefaults.standard
+//    var songs:
+    var album:Album?
     var index:Int?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 //        songs = songsPlayList.object(forKey: "songData") as? [Song]
         
         //self.initializeData(with: vModel!)
@@ -47,7 +50,7 @@ class MusicPlayerViewController: UIViewController {
 //    }
     override func viewDidDisappear(_ animated: Bool) {
         timer?.invalidate()
-        audioPlayer?.stop()
+        audioPlayer?.pause()
     }
     public func initializeData(with viewModel: MusicPlayerViewModel){
         if index == 0{
@@ -58,7 +61,7 @@ class MusicPlayerViewController: UIViewController {
             backTrackButton.tintColor = .systemYellow
             backTrackButton.setImage(UIImage(systemName: "backward.end"), for: .normal)
         }
-        if index == (songs!.count - 1){
+        if index == (album!.tracks.data.count - 1){
             forwardTrackButton.tintColor = .systemGray
             forwardTrackButton.setImage(UIImage(systemName: "forward.end.fill"), for: .normal)
         }else{
@@ -69,38 +72,54 @@ class MusicPlayerViewController: UIViewController {
         stopButton.setImage(UIImage(systemName: "stop"), for: .normal)
         isPlaying = false
         progressSlider.value = 0
-        albumImage.image = UIImage(named: viewModel.imageName)
+        let url = URL(string: viewModel.image)
+        let data = try? Data(contentsOf: url!)
+
+        if let imageData = data {
+            albumImage.image = UIImage(data: imageData)
+        }
         songTitle.text = viewModel.title
         artist.text = viewModel.artist
-        source.text = viewModel.source
-        fileURL = viewModel.url
+        source.text = viewModel.album
+        fileURL = URL(string: viewModel.url)
+        print("*****************************************************")
+        print(viewModel.url)
         do{
-            audioPlayer = try AVAudioPlayer(contentsOf:fileURL!)
+            print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+            playerItem = try AVPlayerItem(url:fileURL!)
+            audioPlayer = AVPlayer(playerItem:playerItem)
+            print("Found File")
         }catch{
-            print{"Error Grabbing File"}
+            print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+            print("Error Grabbing File")
         }
     }
     
     @IBAction func progressBarSlid(_ sender: Any) {
-        audioPlayer?.currentTime = Double(progressSlider.value * Float(audioPlayer!.duration))
+//        audioPlayer?.seek(to: CMTime.init(value: CMTimeValue(Float(progressSlider.value * Float((audioPlayer!.currentItem?.asset.duration)!))), timescale: 1000))
+//        audioPlayer?.seek(to: CMTime(value: CMTimeValue(progressSlider.value * (audioPlayer!.currentItem?.asset.duration)!), timescale: 1000))
+        var time = progressSlider.value * (30)
+        audioPlayer!.seek(to:CMTimeMakeWithSeconds(Float64(time),preferredTimescale: 1000))
     }
     @IBAction func backTrackTap(_ sender: Any) {
         if index == 0 {
             print("This is the first track in the playlist")
         }else{
             index = index! - 1
-            let model = songs![index!]
-            let viewModel = MusicPlayerViewModel(title: model.title, artist: model.artist, imageName: model.albumImageName,source: model.mediaSource, url: model.url)
+            let model = album
+    //        print(model.title)
+            let viewModel = MusicPlayerViewModel(title: model!.tracks.data[index!].title, artist: model!.artist.name, image: model!.cover,album: model!.title, url: model!.tracks.data[index!].preview)
             self.initializeData(with: viewModel)
         }
     }
     @IBAction func forwardTrackTouch(_ sender: Any) {
-        if index == (songs!.count - 1) {
+        if index == (album!.tracks.data.count - 1) {
             print("This is the last track in the playlist")
         }else{
             index = index! + 1
-            let model = songs![index!]
-            let viewModel = MusicPlayerViewModel(title: model.title, artist: model.artist, imageName: model.albumImageName,source: model.mediaSource, url: model.url)
+            let model = album
+    //        print(model.title)
+            let viewModel = MusicPlayerViewModel(title: model!.tracks.data[index!].title, artist: model!.artist.name, image: model!.cover,album: model!.title, url: model!.tracks.data[index!].preview)
             self.initializeData(with: viewModel)
         }
     }
@@ -121,17 +140,17 @@ class MusicPlayerViewController: UIViewController {
         
     }
     @IBAction func stopTouch(_ sender: Any) {
-        audioPlayer?.stop()
+        audioPlayer?.pause()
         timer?.invalidate()
         isPlaying = false
         stopButton.setImage(UIImage(systemName: "stop.fill"), for: .normal)
         playPauseButton.setImage(UIImage(systemName: "play"), for: .normal)
-        audioPlayer?.currentTime = 0
+        audioPlayer?.seek(to:CMTime.zero)
         progressSlider.value = 0
     }
     
     @objc func updatePlayTime(){
-        progressSlider.value = Float(audioPlayer!.currentTime)/Float(audioPlayer!.duration)
+        progressSlider.value = Float(audioPlayer!.currentTime().seconds/30.0)
     }
 
     /*
