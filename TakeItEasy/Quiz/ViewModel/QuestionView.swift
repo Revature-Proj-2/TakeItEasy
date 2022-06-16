@@ -7,13 +7,16 @@
 
 import Foundation
 
-class QuestionView {
+/*class QuestionView {
     var questionData:DataModel?
     func readLocalFile(forName name: String) -> Data? {
         do {
-            if let bundlePath = Bundle.main.path(forResource: name, ofType: "json"),
+            if let bundlePath = Bundle.main.path(forResource: "questions", ofType: "json"),
                 let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
+                print(jsonData)
+                parse(jsonData: jsonData)
                 return jsonData
+                
             }
         } catch {
             print(error)
@@ -32,3 +35,4 @@ class QuestionView {
         }
     }
 }
+*/

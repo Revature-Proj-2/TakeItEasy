@@ -7,8 +7,12 @@
 
 import Foundation
 
+
+
+
 struct DataModel: Codable{
     var data : QuestionsModel?
+   
 }
 
 struct QuestionsModel: Codable {
@@ -16,7 +20,7 @@ struct QuestionsModel: Codable {
     
 }
 
-    
+
     
 
 
@@ -30,4 +34,13 @@ struct Questions: Codable {
     var question: String?
 
 
+}
+struct QuizletModel: Codable {
+    var quizlet: [Quizlet]?
+}
+struct Quizlet: Codable {
+    var id: Int?
+    var prizePoints: String?
+    var totalQuiz: String?
+    var lastQuiz: String?
 }
