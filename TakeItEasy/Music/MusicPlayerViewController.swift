@@ -82,15 +82,15 @@ class MusicPlayerViewController: UIViewController {
         artist.text = viewModel.artist
         source.text = viewModel.album
         fileURL = URL(string: viewModel.url)
-        print("*****************************************************")
+//        print("*****************************************************")
         print(viewModel.url)
         do{
-            print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+//            print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
             playerItem = try AVPlayerItem(url:fileURL!)
             audioPlayer = AVPlayer(playerItem:playerItem)
             print("Found File")
         }catch{
-            print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+//            print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
             print("Error Grabbing File")
         }
     }

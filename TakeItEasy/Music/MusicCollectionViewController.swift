@@ -20,11 +20,13 @@ class MusicCollectionViewController: UIViewController,UICollectionViewDelegate,U
     var songsSearch:[Songs]?
     var album:Album?
     var searchAlbum:Album?
+    let userDefaults = UserDefaults.standard
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        super.tabBarController?.title = userDefaults.string(forKey:"takeItEasyUserName")
         if let url = URL(string:deezerURL){
             if let data = try? Data(contentsOf: url){
                 self.parseData(json: data)
@@ -40,12 +42,20 @@ class MusicCollectionViewController: UIViewController,UICollectionViewDelegate,U
         searchAlbum = album
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let backBarButton = UIBarButtonItem()
+        backBarButton.title = "Log Out"
+        navigationController?.navigationBar.backItem?.backBarButtonItem = backBarButton
+    }
+    
     func parseData(json:Data){
         let decoder = JSONDecoder()
         if let jsonAlbum = try? decoder.decode(Album.self,from:json){
 //            songs = jsonAlbum.tracks.data
             album = jsonAlbum.self
             print(album!.title)
+            print(album!.tracks.data)
             collectionView.reloadData()
         }
             
@@ -66,8 +76,12 @@ class MusicCollectionViewController: UIViewController,UICollectionViewDelegate,U
 //            songs = songsSearch!
             album = searchAlbum
         }else{
-//            songs = songsSearch!.filter({$0.title.contains(searchBar.text!)})
-            album!.tracks.data = searchAlbum!.tracks.data.filter({$0.title == searchBar.text!})
+            var songs:[Songs] = searchAlbum!.tracks.data
+            songs = songs.filter({$0.title.contains(searchBar.text!)})
+            print(songs)
+            let tracksData = Tracks.init(data: songs)
+            album = Album(title: searchAlbum!.title, cover: searchAlbum!.cover, artist: searchAlbum!.artist, tracks: tracksData)
+            
         }
         collectionView.reloadData()
     }
