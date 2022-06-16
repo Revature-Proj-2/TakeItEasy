@@ -1,27 +1,18 @@
 //
-//  CustomTextField.swift
+//  CustomButtonDisplay.swift
 //  TakeItEasy
 //
-//  Created by admin on 6/10/22.
+//  Created by AAron on 6/13/22.
 //
-
 
 import UIKit
 
-class CustomTextField: UITextField {
+class CustomButtonDisplay: UIButton {
 
     let padding = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 5)
     
-    override open func textRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.inset(by: padding)
-    }
+  
     
-    override open func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.inset(by: padding)
-    }
-    override open func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.inset(by: padding)
-    }
     
     public override init(frame: CGRect){
         super.init(frame: frame)
@@ -31,7 +22,6 @@ class CustomTextField: UITextField {
     public required init?(coder: NSCoder){
         super.init(coder: coder)
         setup()
-        
     }
     
     func setup(){

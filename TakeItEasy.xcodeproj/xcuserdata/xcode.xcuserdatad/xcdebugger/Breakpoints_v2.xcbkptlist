@@ -7,17 +7,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9132DBBE-FB6A-4FF9-A264-0FA0D72E9E25"
-            shouldBeEnabled = "No"
+            uuid = "3DFBD7B1-5C2A-42E5-8D22-FB477D98E6CB"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TakeItEasy/Quiz/Controller/SpecificsViewController.swift"
+            filePath = "TakeItEasy/Quiz/ViewModel/QuestionView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "5"
-            endingLineNumber = "5"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "38"
+            endingLineNumber = "38">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
