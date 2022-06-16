@@ -1,3 +1,0 @@
-//
-//  Stacks.swift
-//  TakeItEasy

@@ -47,10 +47,7 @@
 		AE2212372852BE5F0091A102 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2212362852BE5F0091A102 /* ResultsViewController.swift */; };
 		AE88FA8E2852D70100DCC4AD /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE88FA8D2852D70100DCC4AD /* MenuCollectionViewCell.swift */; };
 		AE8A81FB2857972900CACCB4 /* CustomButtonDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A81FA2857972900CACCB4 /* CustomButtonDisplay.swift */; };
-		AE8A81FF2857AA1800CACCB4 /* Untitled-2.png in Resources */ = {isa = PBXBuildFile; fileRef = AE8A81FE2857AA1800CACCB4 /* Untitled-2.png */; };
 		AE8A8206285832A200CACCB4 /* take_it_easy.png in Resources */ = {isa = PBXBuildFile; fileRef = AE8A8204285832A100CACCB4 /* take_it_easy.png */; };
-		AE8A8207285832A200CACCB4 /* takeiteasy_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = AE8A8205285832A100CACCB4 /* takeiteasy_dark.png */; };
-		AE8A820D2859076400CACCB4 /* Stacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A820C2859076400CACCB4 /* Stacks.swift */; };
 		AE8A8235285AE7B000CACCB4 /* QuizTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A8234285AE7B000CACCB4 /* QuizTableViewCell.swift */; };
 		AE8A8237285BC3CF00CACCB4 /* easy.png in Resources */ = {isa = PBXBuildFile; fileRef = AE8A8236285BC3CF00CACCB4 /* easy.png */; };
 		AEAA3D7D2855A40300A5CF89 /* DbHelperLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAA3D7C2855A40300A5CF89 /* DbHelperLite.swift */; };
@@ -99,10 +96,7 @@
 		AE2212362852BE5F0091A102 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		AE88FA8D2852D70100DCC4AD /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		AE8A81FA2857972900CACCB4 /* CustomButtonDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomButtonDisplay.swift; path = TakeItEasy/CustomButtonDisplay.swift; sourceTree = SOURCE_ROOT; };
-		AE8A81FE2857AA1800CACCB4 /* Untitled-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Untitled-2.png"; path = "../../Untitled-2.png"; sourceTree = "<group>"; };
 		AE8A8204285832A100CACCB4 /* take_it_easy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = take_it_easy.png; sourceTree = "<group>"; };
-		AE8A8205285832A100CACCB4 /* takeiteasy_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = takeiteasy_dark.png; sourceTree = "<group>"; };
-		AE8A820C2859076400CACCB4 /* Stacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stacks.swift; sourceTree = "<group>"; };
 		AE8A8234285AE7B000CACCB4 /* QuizTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTableViewCell.swift; sourceTree = "<group>"; };
 		AE8A8236285BC3CF00CACCB4 /* easy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easy.png; sourceTree = "<group>"; };
 		AEAA3D7C2855A40300A5CF89 /* DbHelperLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbHelperLite.swift; sourceTree = "<group>"; };
@@ -156,7 +150,6 @@
 				84361562284FFA0E00D835DF /* SceneDelegate.swift */,
 				84361566284FFA0E00D835DF /* Main.storyboard */,
 				8436156C284FFA0F00D835DF /* Assets.xcassets */,
-				AE8A81FE2857AA1800CACCB4 /* Untitled-2.png */,
 				8436156E284FFA0F00D835DF /* LaunchScreen.storyboard */,
 				84361571284FFA0F00D835DF /* Info.plist */,
 				84361569284FFA0E00D835DF /* TakeItEasy.xcdatamodeld */,
@@ -236,9 +229,7 @@
 				AE22122C28527C3E0091A102 /* questions.json */,
 				AE22121D285248350091A102 /* Quiz.storyboard */,
 				AE8A8236285BC3CF00CACCB4 /* easy.png */,
-				AE8A820C2859076400CACCB4 /* Stacks.swift */,
 				AE8A8204285832A100CACCB4 /* take_it_easy.png */,
-				AE8A8205285832A100CACCB4 /* takeiteasy_dark.png */,
 				AEAA3D7C2855A40300A5CF89 /* DbHelperLite.swift */,
 				AE22121B285248350091A102 /* ViewModel */,
 				AE22121E285248350091A102 /* Models */,
@@ -338,11 +329,9 @@
 			files = (
 				8475A6082852402500FB26B5 /* NotesTableViewCell.xib in Resources */,
 				8475A60A2852402500FB26B5 /* Notes.storyboard in Resources */,
-				AE8A8207285832A200CACCB4 /* takeiteasy_dark.png in Resources */,
 				84361578284FFAEA00D835DF /* Login.storyboard in Resources */,
 				AE8A8206285832A200CACCB4 /* take_it_easy.png in Resources */,
 				5652F84B2853CF1200A943DF /* MusicTableViewCell.xib in Resources */,
-				AE8A81FF2857AA1800CACCB4 /* Untitled-2.png in Resources */,
 				AE22122D28527C3E0091A102 /* questions.json in Resources */,
 				8475A6092852402500FB26B5 /* NotesCollectionViewCell.xib in Resources */,
 				84361570284FFA0F00D835DF /* LaunchScreen.storyboard in Resources */,
@@ -362,7 +351,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE8A820D2859076400CACCB4 /* Stacks.swift in Sources */,
 				5652F8452853CF1200A943DF /* MusicTableViewCell.swift in Sources */,
 				8436162C2853930500D835DF /* CustomTextField.swift in Sources */,
 				8475A60B2852402500FB26B5 /* Note+CoreDataProperties.swift in Sources */,
