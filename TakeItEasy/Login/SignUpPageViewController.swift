@@ -53,6 +53,7 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate, UNUserNot
         }
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         passwordField.delegate = self
