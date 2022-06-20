@@ -62,7 +62,6 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate, UNUserNot
         emailField.delegate = self
         nameField.delegate = self
         UNUserNotificationCenter.current().delegate = self
-        //self.navigationController!.navigationBar.topItem!.title = "Back"
         self.navigationController!.navigationBar.topItem?.backBarButtonItem?.title = "Back"
 
         // Do any additional setup after loading the view.
@@ -81,7 +80,7 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate, UNUserNot
         case reEnterPasswordField:
             passwordMatchLabel.isHidden = false
         default:
-            print("default")
+            ()
         }
         
     }
@@ -122,7 +121,7 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate, UNUserNot
                 phoneReqText.isHidden = true
             }
         default:
-            print("default")
+            ()
         }
     }
     
@@ -154,7 +153,7 @@ class SignUpPageViewController: UIViewController, UITextFieldDelegate, UNUserNot
                 phoneReqText.isHidden = true
             }
         default:
-            print("none")
+            ()
         }
     }
     

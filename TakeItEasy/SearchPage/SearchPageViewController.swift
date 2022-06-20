@@ -15,7 +15,6 @@ class SearchPageViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("search page view did appear")
         let backBarBtnItem = UIBarButtonItem()
         backBarBtnItem.title = "Log Out"
         navigationController?.navigationBar.backItem?.backBarButtonItem = backBarBtnItem
