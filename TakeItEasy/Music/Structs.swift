@@ -7,38 +7,6 @@
 
 import Foundation
 import UIKit
-//struct Song:Codable{
-//    let title:String
-//    let preview:String
-//    let artist:Artist
-//    let albumName:Album
-//    let albumImage:Album
-//}
-//struct Artist:Codable{
-//    let artist:String
-//}
-//
-//struct Album:Codable{
-//    let name:String
-//    let image:UIImage
-//}
-//
-//struct Songs:Codable{
-//    var songs:[Song]
-//}
-
-//struct Album:Codable{
-//    let title:String
-//    let cover:String
-//    let artist:Artist
-//}
-//struct Artist:Codable{
-//    let name:String
-//}
-//struct Tracks:Codable{
-//    let track:[Track]
-//}
-//s
 struct Album : Codable {
     var title : String
     var cover : String
