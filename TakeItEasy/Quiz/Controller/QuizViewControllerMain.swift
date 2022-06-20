@@ -2,23 +2,45 @@
 //  QuizViewControllerMain.swift
 //  TakeItEasy
 //
-//  Created by xcode on 6/7/22.
+//  Created by AAron on 6/7/22.
 //
 
 import UIKit
-
+import SwiftUI
+import CoreData
 class QuizViewControllerMain: UIViewController{
+    var quizlet : Quizlet?
+    @IBOutlet weak var blurr: UIVisualEffectView!
+    @State private var alpha = 0
+    
 
     override func viewDidLoad() {
             super.viewDidLoad()
-        DbHelperLite.dbHelper.createDB()
-        DbHelperLite.dbHelper.createTable()
-       
-          
-                
+      
+        
+      
+        blurr.alpha = 0
+        _ = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        totalPoints.text = "\(String(describing: quizlet?.totalQuiz))"
     }
+    override func viewWillAppear(_ animated: Bool) {
+        if (quizlet?.totalQuiz == nil){
+            totalPoints.text = "0"
+        }
+        else{
+            totalPoints.text = quizlet?.totalQuiz
+        }
+    }
+    
+    @IBOutlet weak var userNames: UILabel!
+    
+    @IBOutlet weak var totalPoints: UILabel!
+  
     @IBAction func quizSelect(_ sender: Any) {
+        
+        blurr.alpha = 1
     }
+  
     func updateBorder(myButton: UIButton, borderWidth: CGFloat = 0) {
             myButton.layer.borderWidth = borderWidth
             myButton.layer.borderColor = UIColor.white.cgColor            }
