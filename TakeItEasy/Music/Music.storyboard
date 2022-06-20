@@ -3,6 +3,7 @@
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -34,10 +35,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8QY-Lo-CuA">
-                                <rect key="frame" x="20" y="177" width="388" height="471"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="20" y="177" width="388" height="464"/>
+                                <color key="backgroundColor" name="Background"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="471" id="4pG-1b-5m0"/>
+                                    <constraint firstAttribute="height" constant="464" id="4pG-1b-5m0"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bsX-25-OgP">
                                     <size key="itemSize" width="200" height="200"/>
@@ -48,10 +49,10 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="musicCell" id="4bw-c1-fbU" customClass="MusicCollectionViewCell" customModule="TakeItEasy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="85.333333333333329" height="199.99999999999997"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="85.333333333333329" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ogn-fT-7NN">
-                                            <rect key="frame" x="0.0" y="0.0" width="85.333333333333329" height="199.99999999999997"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="85.333333333333329" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="16e-cH-cyX">
@@ -88,8 +89,20 @@
                                     <outlet property="delegate" destination="ixs-io-qj7" id="BLO-v5-jJp"/>
                                 </connections>
                             </collectionView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="VfQ-Mx-WMb">
+                                <rect key="frame" x="0.0" y="88" width="428" height="51"/>
+                                <color key="backgroundColor" name="Background"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="73o-b5-oXg"/>
+                                </constraints>
+                                <color key="barTintColor" name="Background"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ixs-io-qj7" id="05U-NS-h1f"/>
+                                </connections>
+                            </searchBar>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gnc-g8-0mQ">
-                                <rect key="frame" x="20" y="656" width="388" height="194"/>
+                                <rect key="frame" x="20" y="649" width="388" height="194"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="194" id="sXT-mq-QTT"/>
                                 </constraints>
@@ -97,16 +110,9 @@
                                     <segue destination="BfG-jL-JaV" kind="embed" id="FDM-Fm-YFE"/>
                                 </connections>
                             </containerView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="VfQ-Mx-WMb">
-                                <rect key="frame" x="0.0" y="88" width="428" height="51"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="ixs-io-qj7" id="05U-NS-h1f"/>
-                                </connections>
-                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BxW-Md-43X"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="VfQ-Mx-WMb" firstAttribute="trailing" secondItem="BxW-Md-43X" secondAttribute="trailing" id="8tW-pn-OFv"/>
                             <constraint firstItem="VfQ-Mx-WMb" firstAttribute="centerX" secondItem="D7W-YX-1sU" secondAttribute="centerX" id="Bjn-rw-2BL"/>
@@ -114,6 +120,7 @@
                             <constraint firstItem="8QY-Lo-CuA" firstAttribute="top" secondItem="VfQ-Mx-WMb" secondAttribute="bottom" constant="38" id="OfA-xb-YYk"/>
                             <constraint firstItem="BxW-Md-43X" firstAttribute="trailing" secondItem="8QY-Lo-CuA" secondAttribute="trailing" constant="20" id="PO6-Cc-5jR"/>
                             <constraint firstItem="Gnc-g8-0mQ" firstAttribute="top" secondItem="8QY-Lo-CuA" secondAttribute="bottom" constant="8" symbolic="YES" id="Plw-Wa-yrh"/>
+                            <constraint firstItem="Gnc-g8-0mQ" firstAttribute="bottom" secondItem="BxW-Md-43X" secondAttribute="bottom" id="SZ3-gd-hBK"/>
                             <constraint firstItem="VfQ-Mx-WMb" firstAttribute="top" secondItem="BxW-Md-43X" secondAttribute="top" id="ce1-8W-D0g"/>
                             <constraint firstItem="BxW-Md-43X" firstAttribute="trailing" secondItem="Gnc-g8-0mQ" secondAttribute="trailing" constant="20" id="flH-Gf-WjN"/>
                             <constraint firstItem="Gnc-g8-0mQ" firstAttribute="centerX" secondItem="D7W-YX-1sU" secondAttribute="centerX" id="jSF-db-XSd"/>
@@ -237,8 +244,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="mdK-jq-NoR"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="3UE-1C-Q1u"/>
+                        <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="SFg-Qm-OJP" firstAttribute="centerY" secondItem="cYn-gb-egO" secondAttribute="centerY" constant="-12" id="2Kb-x9-n4e"/>
                             <constraint firstItem="EHN-GR-lXF" firstAttribute="leading" secondItem="Vpb-Lo-v80" secondAttribute="trailing" constant="42" id="35U-m9-ng4"/>
@@ -290,9 +297,9 @@
         <image name="music.note.tv.fill" catalog="system" width="128" height="97"/>
         <image name="play" catalog="system" width="120" height="128"/>
         <image name="stop" catalog="system" width="128" height="113"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="Background">
+            <color red="0.89411764705882357" green="0.94509803921568625" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
