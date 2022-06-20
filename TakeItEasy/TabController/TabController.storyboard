@@ -25,6 +25,7 @@
                         <segue destination="DHO-l7-hUV" kind="relationship" relationship="viewControllers" id="7tV-FG-W9C"/>
                         <segue destination="gt9-GK-LWQ" kind="relationship" relationship="viewControllers" id="oi9-yU-f9C"/>
                         <segue destination="Pb9-Bj-7es" kind="relationship" relationship="viewControllers" id="z4z-FZ-TOl"/>
+                        <segue destination="ppU-l9-BE4" kind="relationship" relationship="viewControllers" id="CNj-Bn-dus"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QTk-3E-iRM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -71,10 +72,20 @@
             </objects>
             <point key="canvasLocation" x="1040" y="76"/>
         </scene>
+        <!--Books-->
+        <scene sceneID="6xv-rl-U5d">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Books" id="ppU-l9-BE4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="jFN-0S-OhJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oWx-VP-WZL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069" y="158"/>
+        </scene>
     </scenes>
     <resources>
         <namedColor name="Background">
-            <color red="0.89411764705882357" green="0.94509803921568625" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.80392156862745101" green="0.98039215686274506" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Button">
             <color red="0.0" green="0.71764705882352942" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
