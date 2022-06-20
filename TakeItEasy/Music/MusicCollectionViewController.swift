@@ -26,7 +26,7 @@ class MusicCollectionViewController: UIViewController,UICollectionViewDelegate,U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        super.tabBarController?.title = userDefaults.string(forKey:"takeItEasyUserName")
+        super.tabBarController?.title = userDefaults.string(forKey:"takeItEasyCurrentLoggedIn")
         if let url = URL(string:deezerURL){
             if let data = try? Data(contentsOf: url){
                 self.parseData(json: data)
