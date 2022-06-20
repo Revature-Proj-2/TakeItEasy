@@ -26,28 +26,13 @@ class MusicPlayerViewController: UIViewController {
     var playerItem:AVPlayerItem?
     var timer:Timer?
     var isPlaying:Bool = false
-//    var songsPlayList = UserDefaults.standard
-//    var songs:
     var album:Album?
     var index:Int?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        songs = songsPlayList.object(forKey: "songData") as? [Song]
-        
-        //self.initializeData(with: vModel!)
-        // Do any additional setup after loading the view.
     }
-//    func firstLoad() async{
-//        do{
-//        try await Task.sleep(nanoseconds: 400)
-//        self.initializeData(with: vModel!)
-//        }catch{
-//            print("Error Loading Media Player")
-//        }
-//    }
     override func viewDidDisappear(_ animated: Bool) {
         timer?.invalidate()
         audioPlayer?.pause()
@@ -82,22 +67,17 @@ class MusicPlayerViewController: UIViewController {
         artist.text = viewModel.artist
         source.text = viewModel.album
         fileURL = URL(string: viewModel.url)
-//        print("*****************************************************")
         print(viewModel.url)
         do{
-//            print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
             playerItem = try AVPlayerItem(url:fileURL!)
             audioPlayer = AVPlayer(playerItem:playerItem)
             print("Found File")
         }catch{
-//            print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
             print("Error Grabbing File")
         }
     }
     
     @IBAction func progressBarSlid(_ sender: Any) {
-//        audioPlayer?.seek(to: CMTime.init(value: CMTimeValue(Float(progressSlider.value * Float((audioPlayer!.currentItem?.asset.duration)!))), timescale: 1000))
-//        audioPlayer?.seek(to: CMTime(value: CMTimeValue(progressSlider.value * (audioPlayer!.currentItem?.asset.duration)!), timescale: 1000))
         var time = progressSlider.value * (30)
         audioPlayer!.seek(to:CMTimeMakeWithSeconds(Float64(time),preferredTimescale: 1000))
     }
@@ -107,7 +87,6 @@ class MusicPlayerViewController: UIViewController {
         }else{
             index = index! - 1
             let model = album
-    //        print(model.title)
             let viewModel = MusicPlayerViewModel(title: model!.tracks.data[index!].title, artist: model!.artist.name, image: model!.cover,album: model!.title, url: model!.tracks.data[index!].preview)
             self.initializeData(with: viewModel)
         }
@@ -118,7 +97,6 @@ class MusicPlayerViewController: UIViewController {
         }else{
             index = index! + 1
             let model = album
-    //        print(model.title)
             let viewModel = MusicPlayerViewModel(title: model!.tracks.data[index!].title, artist: model!.artist.name, image: model!.cover,album: model!.title, url: model!.tracks.data[index!].preview)
             self.initializeData(with: viewModel)
         }
@@ -152,15 +130,4 @@ class MusicPlayerViewController: UIViewController {
     @objc func updatePlayTime(){
         progressSlider.value = Float(audioPlayer!.currentTime().seconds/30.0)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
