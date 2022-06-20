@@ -7,8 +7,8 @@
 import UIKit
 
 class SpecificsViewController: UIViewController {
-
-    
+  
+    let quizzes = ["Quiz 1 Easy difficulty", "Quiz 2 Super difficulty", "Quiz 3 Easy Difficulty", "Quiz 4 Super Difficulty"]
     @IBOutlet weak var sliderText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +16,7 @@ class SpecificsViewController: UIViewController {
         slider.minimumValue = 5
         slider.maximumValue = 25
         sliderText.text = String(Int(slider.value))
+        _ = [quizzes]
 }
     @IBOutlet weak var difficultySwitcher: UISegmentedControl!
     
@@ -34,32 +35,34 @@ class SpecificsViewController: UIViewController {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String){
         
     }
+    @IBOutlet weak var QuizSearchView: UITableView!
 }
 
-let quizzes = ["Quiz 1 Easy difficulty", "Quiz 2 Super difficulty", "Quiz 3 Easy Difficulty", "Quiz 4 Super Difficulty"]
+
 
 
 extension SpecificsViewController: UITableViewDelegate, UITableViewDataSource{
-    
-    
+ 
 
         func numberOfSections(in tableView: UITableView) -> Int {
             // #warning Incomplete implementation, return the number of sections
-            return 4
+            return quizzes.count
         }
 
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             // #warning Incomplete implementation, return the number of rows
-            return 0
+            return 1
         }
 
    
        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "QuizCell", for: indexPath)
-          
-            return cell
+         let cell = tableView.dequeueReusableCell(withIdentifier: "QuizCell", for: indexPath)
+          // cell.qsearchResult.text =
+         //  quizzes[(indexPath.row)]
+          return cell
+           }
         }
         
-}
+
 
 

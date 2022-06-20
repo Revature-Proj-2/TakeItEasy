@@ -7,7 +7,7 @@
 
 import Foundation
 
-/*class QuestionView {
+class QuestionView {
     var questionData:DataModel?
     func readLocalFile(forName name: String) -> Data? {
         do {
@@ -35,4 +35,4 @@ import Foundation
         }
     }
 }
-*/
+
