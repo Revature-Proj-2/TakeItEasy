@@ -22,7 +22,6 @@ class NotesCollectionViewCell: UICollectionViewCell {
     var isChecked = Bool(){
         didSet{
             if(!isChecked){
-                print("water")
                 deleteIcon.setImage(UIImage(systemName: "square"),for: .normal)
             }else{
                 deleteIcon.setImage(UIImage(systemName: "checkmark.square"),for: .normal)

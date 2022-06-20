@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import Speech
 
-class ViewController: UIViewController {
+class SpeechRecognizer: UIViewController {
 
     let audioEngine = AVAudioEngine()
     let speechRecognizer = SFSpeechRecognizer()
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     var isStart = false
     
     var startStopButton: UIButton!
-    var resultLabel: UILabel!
+    var resultText: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
             }
             
             let msg = resp?.bestTranscription.formattedString
-            self.resultLabel.text = msg
+            self.resultText.text = msg
             
             var colorValue = ""
             for str in resp!.bestTranscription.segments{
@@ -61,19 +61,19 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func startRecording(_ sender: UIButton) {
+    func startRecording(_ sender: UIButton) {
         
         if isStart == false{
             
-            sender.setTitle("Stop", for: .normal)
-            self.resultLabel.text = "This is where I would put my speech to text ....... if I had any! \n\n\nThanks VM"
-            startSpeechRecog()
+            sender.tintColor = .blue
+            self.resultText.text = "This is where I would put my speech to text ....... if I had any! \n\n\nThanks VM"
+            //startSpeechRecog()
         }
         if isStart == true {
             
-            sender.setTitle("Start", for: .normal)
-            self.resultLabel.text = "Speech to text would be stopped now."
-            stopSpeechRecog()
+            sender.tintColor = .gray
+            self.resultText.text = "Speech to text would be stopped now."
+            //stopSpeechRecog()
         }
         isStart = !isStart
     }
