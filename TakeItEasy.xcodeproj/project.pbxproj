@@ -44,14 +44,6 @@
 		84504D18286023400085C8E4 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84504D10286023400085C8E4 /* BooksViewController.swift */; };
 		84504D19286023400085C8E4 /* BookSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84504D11286023400085C8E4 /* BookSearchTableViewCell.xib */; };
 		84504D1A286023400085C8E4 /* BookContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84504D12286023400085C8E4 /* BookContent.swift */; };
-		8475A6052852402500FB26B5 /* NotesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A5FB2852402500FB26B5 /* NotesCollectionViewCell.swift */; };
-		8475A6062852402500FB26B5 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A5FC2852402500FB26B5 /* NotesViewController.swift */; };
-		8475A6072852402500FB26B5 /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A5FD2852402500FB26B5 /* NotesTableViewCell.swift */; };
-		8475A6082852402500FB26B5 /* NotesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8475A5FF2852402500FB26B5 /* NotesTableViewCell.xib */; };
-		8475A6092852402500FB26B5 /* NotesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8475A6002852402500FB26B5 /* NotesCollectionViewCell.xib */; };
-		8475A60A2852402500FB26B5 /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8475A6012852402500FB26B5 /* Notes.storyboard */; };
-		8475A60B2852402500FB26B5 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A6032852402500FB26B5 /* Note+CoreDataProperties.swift */; };
-		8475A60C2852402500FB26B5 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A6042852402500FB26B5 /* Note+CoreDataClass.swift */; };
 		84FF876D2858EDDB00AF34BC /* TabController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FF876C2858EDDB00AF34BC /* TabController.storyboard */; };
 		AE221223285248350091A102 /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE22121D285248350091A102 /* Quiz.storyboard */; };
 		AE221224285248350091A102 /* QuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE22121F285248350091A102 /* QuestionsModel.swift */; };
@@ -110,14 +102,6 @@
 		84504D10286023400085C8E4 /* BooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		84504D11286023400085C8E4 /* BookSearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookSearchTableViewCell.xib; sourceTree = "<group>"; };
 		84504D12286023400085C8E4 /* BookContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookContent.swift; sourceTree = "<group>"; };
-		8475A5FB2852402500FB26B5 /* NotesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesCollectionViewCell.swift; sourceTree = "<group>"; };
-		8475A5FC2852402500FB26B5 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
-		8475A5FD2852402500FB26B5 /* NotesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
-		8475A5FF2852402500FB26B5 /* NotesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotesTableViewCell.xib; sourceTree = "<group>"; };
-		8475A6002852402500FB26B5 /* NotesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotesCollectionViewCell.xib; sourceTree = "<group>"; };
-		8475A6012852402500FB26B5 /* Notes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notes.storyboard; sourceTree = "<group>"; };
-		8475A6032852402500FB26B5 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8475A6042852402500FB26B5 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
 		84FF876C2858EDDB00AF34BC /* TabController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabController.storyboard; sourceTree = "<group>"; };
 		84FF8839285BBD8000AF34BC /* takeiteasy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = takeiteasy.png; sourceTree = "<group>"; };
 		AE22121D285248350091A102 /* Quiz.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
@@ -195,7 +179,6 @@
 				843615C328524F1B00D835DF /* Login */,
 				843615BF285131D300D835DF /* ObservableObject.swift */,
 				AE22121A285248350091A102 /* Quiz */,
-				8475A5F92852402500FB26B5 /* Notes */,
 				8436160A2853880700D835DF /* SearchPage */,
 			);
 			path = TakeItEasy;
@@ -276,45 +259,6 @@
 				84504D12286023400085C8E4 /* BookContent.swift */,
 			);
 			path = Books;
-			sourceTree = "<group>";
-		};
-		8475A5F92852402500FB26B5 /* Notes */ = {
-			isa = PBXGroup;
-			children = (
-				8475A5FA2852402500FB26B5 /* NotesScripts */,
-				8475A5FE2852402500FB26B5 /* NotesStoryBoards */,
-				8475A6022852402500FB26B5 /* NotesData */,
-			);
-			path = Notes;
-			sourceTree = "<group>";
-		};
-		8475A5FA2852402500FB26B5 /* NotesScripts */ = {
-			isa = PBXGroup;
-			children = (
-				8475A5FB2852402500FB26B5 /* NotesCollectionViewCell.swift */,
-				8475A5FC2852402500FB26B5 /* NotesViewController.swift */,
-				8475A5FD2852402500FB26B5 /* NotesTableViewCell.swift */,
-			);
-			path = NotesScripts;
-			sourceTree = "<group>";
-		};
-		8475A5FE2852402500FB26B5 /* NotesStoryBoards */ = {
-			isa = PBXGroup;
-			children = (
-				8475A5FF2852402500FB26B5 /* NotesTableViewCell.xib */,
-				8475A6002852402500FB26B5 /* NotesCollectionViewCell.xib */,
-				8475A6012852402500FB26B5 /* Notes.storyboard */,
-			);
-			path = NotesStoryBoards;
-			sourceTree = "<group>";
-		};
-		8475A6022852402500FB26B5 /* NotesData */ = {
-			isa = PBXGroup;
-			children = (
-				8475A6032852402500FB26B5 /* Note+CoreDataProperties.swift */,
-				8475A6042852402500FB26B5 /* Note+CoreDataClass.swift */,
-			);
-			path = NotesData;
 			sourceTree = "<group>";
 		};
 		84FF876E2858EDFC00AF34BC /* TabController */ = {
@@ -431,12 +375,9 @@
 			files = (
 				84504D07286023210085C8E4 /* Notes.storyboard in Resources */,
 				56E50326285BC5F10020622E /* Music.storyboard in Resources */,
-				8475A6082852402500FB26B5 /* NotesTableViewCell.xib in Resources */,
-				8475A60A2852402500FB26B5 /* Notes.storyboard in Resources */,
 				84361578284FFAEA00D835DF /* Login.storyboard in Resources */,
 				AE22122D28527C3E0091A102 /* questions.json in Resources */,
 				84504D06286023210085C8E4 /* NotesCollectionViewCell.xib in Resources */,
-				8475A6092852402500FB26B5 /* NotesCollectionViewCell.xib in Resources */,
 				84504D19286023400085C8E4 /* BookSearchTableViewCell.xib in Resources */,
 				84361570284FFA0F00D835DF /* LaunchScreen.storyboard in Resources */,
 				8436156D284FFA0F00D835DF /* Assets.xcassets in Resources */,
@@ -462,14 +403,12 @@
 				84504D01286023210085C8E4 /* SpeechRecognizer.swift in Sources */,
 				8436162C2853930500D835DF /* CustomTextField.swift in Sources */,
 				84504D13286023400085C8E4 /* BookCollectionViewCell.swift in Sources */,
-				8475A60B2852402500FB26B5 /* Note+CoreDataProperties.swift in Sources */,
 				AE221225285248350091A102 /* QuizViewControllerMain.swift in Sources */,
 				AE2212372852BE5F0091A102 /* ResultsViewController.swift in Sources */,
 				AE2212272852510C0091A102 /* QuestionsViewController.swift in Sources */,
 				AE221224285248350091A102 /* QuestionsModel.swift in Sources */,
 				56E50328285BC5F70020622E /* MusicCollectionViewCell.swift in Sources */,
 				56E5032C285BC6060020622E /* MusicPlayerViewController.swift in Sources */,
-				8475A6052852402500FB26B5 /* NotesCollectionViewCell.swift in Sources */,
 				84504D17286023400085C8E4 /* BookSearchTableViewCell.swift in Sources */,
 				84361565284FFA0E00D835DF /* SpecificsViewController.swift in Sources */,
 				84504D04286023210085C8E4 /* NotesTableViewCell.swift in Sources */,
@@ -481,17 +420,14 @@
 				84504D08286023210085C8E4 /* Note+CoreDataProperties.swift in Sources */,
 				AE2212292852548D0091A102 /* QuizCollectionViewCell.swift in Sources */,
 				8436157C284FFD9700D835DF /* SignUpPageViewController.swift in Sources */,
-				8475A6062852402500FB26B5 /* NotesViewController.swift in Sources */,
 				84504D02286023210085C8E4 /* NotesCollectionViewCell.swift in Sources */,
 				AE8A81FB2857972900CACCB4 /* CustomButtonDisplay.swift in Sources */,
 				843615C0285131D300D835DF /* ObservableObject.swift in Sources */,
 				AE22122F285280A70091A102 /* QuestionView.swift in Sources */,
-				8475A6072852402500FB26B5 /* NotesTableViewCell.swift in Sources */,
 				AEAA3D7D2855A40300A5CF89 /* DbHelperLite.swift in Sources */,
 				84504D16286023400085C8E4 /* pdfViewController.swift in Sources */,
 				84504D18286023400085C8E4 /* BooksViewController.swift in Sources */,
 				8436165028539D3600D835DF /* SearchPageViewController.swift in Sources */,
-				8475A60C2852402500FB26B5 /* Note+CoreDataClass.swift in Sources */,
 				56E50324285BC5E20020622E /* CustomButton.swift in Sources */,
 				84504D03286023210085C8E4 /* NotesViewController.swift in Sources */,
 				56E5032E285BC60B0020622E /* Structs.swift in Sources */,
