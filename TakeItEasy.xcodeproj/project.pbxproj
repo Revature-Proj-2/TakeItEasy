@@ -13,6 +13,15 @@
 		56E5032A285BC6000020622E /* MusicCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E50329285BC6000020622E /* MusicCollectionViewController.swift */; };
 		56E5032C285BC6060020622E /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E5032B285BC6060020622E /* MusicPlayerViewController.swift */; };
 		56E5032E285BC60B0020622E /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E5032D285BC60B0020622E /* Structs.swift */; };
+		8424095028602D77007BD10C /* NotesTableViewCell.swift 00-10-46-965.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424094528602D77007BD10C /* NotesTableViewCell.swift 00-10-46-965.swift */; };
+		8424095128602D77007BD10C /* NotesCollectionViewCell.swift 00-10-46-969.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424094628602D77007BD10C /* NotesCollectionViewCell.swift 00-10-46-969.swift */; };
+		8424095228602D77007BD10C /* SpeechRecognizer.swift 00-10-46-964.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424094728602D77007BD10C /* SpeechRecognizer.swift 00-10-46-964.swift */; };
+		8424095328602D77007BD10C /* NotesViewController.swift 00-10-46-961.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424094828602D77007BD10C /* NotesViewController.swift 00-10-46-961.swift */; };
+		8424095428602D77007BD10C /* NotesCollectionViewCell.xib 00-10-46-966.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8424094A28602D77007BD10C /* NotesCollectionViewCell.xib 00-10-46-966.xib */; };
+		8424095528602D77007BD10C /* Notes.storyboard 00-10-46-954.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8424094B28602D77007BD10C /* Notes.storyboard 00-10-46-954.storyboard */; };
+		8424095628602D77007BD10C /* NotesTableViewCell.xib 00-10-46-960.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8424094C28602D77007BD10C /* NotesTableViewCell.xib 00-10-46-960.xib */; };
+		8424095728602D77007BD10C /* Note+CoreDataClass.swift 00-10-46-968.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424094E28602D77007BD10C /* Note+CoreDataClass.swift 00-10-46-968.swift */; };
+		8424095828602D77007BD10C /* Note+CoreDataProperties.swift 00-10-46-962.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424094F28602D77007BD10C /* Note+CoreDataProperties.swift 00-10-46-962.swift */; };
 		84361561284FFA0E00D835DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84361560284FFA0E00D835DF /* AppDelegate.swift */; };
 		84361563284FFA0E00D835DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84361562284FFA0E00D835DF /* SceneDelegate.swift */; };
 		84361565284FFA0E00D835DF /* SpecificsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84361564284FFA0E00D835DF /* SpecificsViewController.swift */; };
@@ -60,6 +69,15 @@
 		56E50329285BC6000020622E /* MusicCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicCollectionViewController.swift; sourceTree = "<group>"; };
 		56E5032B285BC6060020622E /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
 		56E5032D285BC60B0020622E /* Structs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		8424094528602D77007BD10C /* NotesTableViewCell.swift 00-10-46-965.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotesTableViewCell.swift 00-10-46-965.swift"; sourceTree = "<group>"; };
+		8424094628602D77007BD10C /* NotesCollectionViewCell.swift 00-10-46-969.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotesCollectionViewCell.swift 00-10-46-969.swift"; sourceTree = "<group>"; };
+		8424094728602D77007BD10C /* SpeechRecognizer.swift 00-10-46-964.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SpeechRecognizer.swift 00-10-46-964.swift"; sourceTree = "<group>"; };
+		8424094828602D77007BD10C /* NotesViewController.swift 00-10-46-961.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotesViewController.swift 00-10-46-961.swift"; sourceTree = "<group>"; };
+		8424094A28602D77007BD10C /* NotesCollectionViewCell.xib 00-10-46-966.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "NotesCollectionViewCell.xib 00-10-46-966.xib"; sourceTree = "<group>"; };
+		8424094B28602D77007BD10C /* Notes.storyboard 00-10-46-954.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Notes.storyboard 00-10-46-954.storyboard"; sourceTree = "<group>"; };
+		8424094C28602D77007BD10C /* NotesTableViewCell.xib 00-10-46-960.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "NotesTableViewCell.xib 00-10-46-960.xib"; sourceTree = "<group>"; };
+		8424094E28602D77007BD10C /* Note+CoreDataClass.swift 00-10-46-968.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift 00-10-46-968.swift"; sourceTree = "<group>"; };
+		8424094F28602D77007BD10C /* Note+CoreDataProperties.swift 00-10-46-962.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift 00-10-46-962.swift"; sourceTree = "<group>"; };
 		8436155D284FFA0E00D835DF /* TakeItEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeItEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84361560284FFA0E00D835DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84361562284FFA0E00D835DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,33 +145,42 @@
 			path = Music;
 			sourceTree = "<group>";
 		};
-		8424093F28602AE2007BD10C /* Notes */ = {
+		8424094328602D77007BD10C /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				8424094028602AE2007BD10C /* NotesScripts */,
-				8424094128602AE2007BD10C /* NotesStoryBoards */,
-				8424094228602AE2007BD10C /* NotesData */,
+				8424094428602D77007BD10C /* NotesScripts */,
+				8424094928602D77007BD10C /* NotesStoryBoards */,
+				8424094D28602D77007BD10C /* NotesData */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
 		};
-		8424094028602AE2007BD10C /* NotesScripts */ = {
+		8424094428602D77007BD10C /* NotesScripts */ = {
 			isa = PBXGroup;
 			children = (
+				8424094528602D77007BD10C /* NotesTableViewCell.swift 00-10-46-965.swift */,
+				8424094628602D77007BD10C /* NotesCollectionViewCell.swift 00-10-46-969.swift */,
+				8424094728602D77007BD10C /* SpeechRecognizer.swift 00-10-46-964.swift */,
+				8424094828602D77007BD10C /* NotesViewController.swift 00-10-46-961.swift */,
 			);
 			path = NotesScripts;
 			sourceTree = "<group>";
 		};
-		8424094128602AE2007BD10C /* NotesStoryBoards */ = {
+		8424094928602D77007BD10C /* NotesStoryBoards */ = {
 			isa = PBXGroup;
 			children = (
+				8424094A28602D77007BD10C /* NotesCollectionViewCell.xib 00-10-46-966.xib */,
+				8424094B28602D77007BD10C /* Notes.storyboard 00-10-46-954.storyboard */,
+				8424094C28602D77007BD10C /* NotesTableViewCell.xib 00-10-46-960.xib */,
 			);
 			path = NotesStoryBoards;
 			sourceTree = "<group>";
 		};
-		8424094228602AE2007BD10C /* NotesData */ = {
+		8424094D28602D77007BD10C /* NotesData */ = {
 			isa = PBXGroup;
 			children = (
+				8424094E28602D77007BD10C /* Note+CoreDataClass.swift 00-10-46-968.swift */,
+				8424094F28602D77007BD10C /* Note+CoreDataProperties.swift 00-10-46-962.swift */,
 			);
 			path = NotesData;
 			sourceTree = "<group>";
@@ -186,7 +213,7 @@
 				84361571284FFA0F00D835DF /* Info.plist */,
 				84FF876E2858EDFC00AF34BC /* TabController */,
 				84361569284FFA0E00D835DF /* TakeItEasy.xcdatamodeld */,
-				8424093F28602AE2007BD10C /* Notes */,
+				8424094328602D77007BD10C /* Notes */,
 				84504D0A286023400085C8E4 /* Books */,
 				5652F83D2853CF1200A943DF /* Music */,
 				843615C328524F1B00D835DF /* Login */,
@@ -346,15 +373,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				56E50326285BC5F10020622E /* Music.storyboard in Resources */,
+				8424095428602D77007BD10C /* NotesCollectionViewCell.xib 00-10-46-966.xib in Resources */,
 				84361578284FFAEA00D835DF /* Login.storyboard in Resources */,
 				AE22122D28527C3E0091A102 /* questions.json in Resources */,
 				84504D19286023400085C8E4 /* BookSearchTableViewCell.xib in Resources */,
 				84361570284FFA0F00D835DF /* LaunchScreen.storyboard in Resources */,
+				8424095628602D77007BD10C /* NotesTableViewCell.xib 00-10-46-960.xib in Resources */,
 				8436156D284FFA0F00D835DF /* Assets.xcassets in Resources */,
 				84361568284FFA0E00D835DF /* Main.storyboard in Resources */,
 				84504D14286023400085C8E4 /* Books.storyboard in Resources */,
 				84504D15286023400085C8E4 /* BookCollectionViewCell.xib in Resources */,
 				84FF876D2858EDDB00AF34BC /* TabController.storyboard in Resources */,
+				8424095528602D77007BD10C /* Notes.storyboard 00-10-46-954.storyboard in Resources */,
 				843616092853880000D835DF /* SearchPage.storyboard in Resources */,
 				AE8A8237285BC3CF00CACCB4 /* easy.png in Resources */,
 				AE221223285248350091A102 /* Quiz.storyboard in Resources */,
@@ -371,6 +401,7 @@
 				AE8A820D2859076400CACCB4 /* Stacks.swift in Sources */,
 				8436162C2853930500D835DF /* CustomTextField.swift in Sources */,
 				84504D13286023400085C8E4 /* BookCollectionViewCell.swift in Sources */,
+				8424095028602D77007BD10C /* NotesTableViewCell.swift 00-10-46-965.swift in Sources */,
 				AE221225285248350091A102 /* QuizViewControllerMain.swift in Sources */,
 				AE2212372852BE5F0091A102 /* ResultsViewController.swift in Sources */,
 				AE2212272852510C0091A102 /* QuestionsViewController.swift in Sources */,
@@ -379,11 +410,13 @@
 				56E5032C285BC6060020622E /* MusicPlayerViewController.swift in Sources */,
 				84504D17286023400085C8E4 /* BookSearchTableViewCell.swift in Sources */,
 				84361565284FFA0E00D835DF /* SpecificsViewController.swift in Sources */,
+				8424095728602D77007BD10C /* Note+CoreDataClass.swift 00-10-46-968.swift in Sources */,
 				84361561284FFA0E00D835DF /* AppDelegate.swift in Sources */,
 				84504D1A286023400085C8E4 /* BookContent.swift in Sources */,
 				56E5032A285BC6000020622E /* MusicCollectionViewController.swift in Sources */,
 				84361563284FFA0E00D835DF /* SceneDelegate.swift in Sources */,
 				AE2212352852BC7C0091A102 /* QuestionsViewModel.swift in Sources */,
+				8424095828602D77007BD10C /* Note+CoreDataProperties.swift 00-10-46-962.swift in Sources */,
 				AE2212292852548D0091A102 /* QuizCollectionViewCell.swift in Sources */,
 				8436157C284FFD9700D835DF /* SignUpPageViewController.swift in Sources */,
 				AE8A81FB2857972900CACCB4 /* CustomButtonDisplay.swift in Sources */,
@@ -395,7 +428,10 @@
 				8436165028539D3600D835DF /* SearchPageViewController.swift in Sources */,
 				56E50324285BC5E20020622E /* CustomButton.swift in Sources */,
 				56E5032E285BC60B0020622E /* Structs.swift in Sources */,
+				8424095228602D77007BD10C /* SpeechRecognizer.swift 00-10-46-964.swift in Sources */,
+				8424095128602D77007BD10C /* NotesCollectionViewCell.swift 00-10-46-969.swift in Sources */,
 				8436157A284FFB2300D835DF /* LoginPageViewController.swift in Sources */,
+				8424095328602D77007BD10C /* NotesViewController.swift 00-10-46-961.swift in Sources */,
 				8436156B284FFA0E00D835DF /* TakeItEasy.xcdatamodeld in Sources */,
 				AE88FA8E2852D70100DCC4AD /* MenuCollectionViewCell.swift in Sources */,
 				AE8A8235285AE7B000CACCB4 /* QuizTableViewCell.swift in Sources */,
