@@ -20,16 +20,13 @@ class QuizViewControllerMain: UIViewController{
         
       
         blurr.alpha = 0
-        _ = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        totalPoints.text = "\(String(describing: quizlet?.totalQuiz))"
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        totalPoints.text = "\(quizlet?.totalQuiz ?? "0")"
     }
     override func viewWillAppear(_ animated: Bool) {
-        if (quizlet?.totalQuiz == nil){
-            totalPoints.text = "0"
-        }
-        else{
+     
             totalPoints.text = quizlet?.totalQuiz
-        }
+        
     }
     
     @IBOutlet weak var userNames: UILabel!

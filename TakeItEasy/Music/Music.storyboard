@@ -237,6 +237,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="mdK-jq-NoR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="SFg-Qm-OJP" firstAttribute="centerY" secondItem="cYn-gb-egO" secondAttribute="centerY" constant="-12" id="2Kb-x9-n4e"/>
