@@ -21,7 +21,6 @@ class NotesTableViewCell: UITableViewCell {
         
         isChecked = false
         dateFormatter.dateFormat = "dd/MM/yyyy  hh:mm"
-        setupViews()
     }
     
     public var isChecked = Bool(){
@@ -41,16 +40,17 @@ class NotesTableViewCell: UITableViewCell {
            return button
        }()
 
-       func setupViews(){
-
+    func setupViews(_ isOn : Bool){
            // add a button
-           addSubview(deleteIcon)
+        addSubview(deleteIcon)
+        deleteIcon.frame = CGRect(x: 390, y: 10, width: 20, height: 20)
+        if(isOn){
+            deleteIcon.isHidden = false
+        }else{
+            deleteIcon.isHidden = true
+        }
 
-            deleteIcon.frame = CGRect(x: 390, y: 10, width: 20, height: 20)
-
-           // add the touchUpInside target
-
-       }
+    }
     
     
     override func setSelected(_ selected: Bool, animated: Bool) {

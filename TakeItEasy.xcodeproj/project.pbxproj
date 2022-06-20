@@ -13,15 +13,24 @@
 		56E5032A285BC6000020622E /* MusicCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E50329285BC6000020622E /* MusicCollectionViewController.swift */; };
 		56E5032C285BC6060020622E /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E5032B285BC6060020622E /* MusicPlayerViewController.swift */; };
 		56E5032E285BC60B0020622E /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E5032D285BC60B0020622E /* Structs.swift */; };
-		8424095028602D77007BD10C /* NotesTableViewCell.swift 00-10-46-965.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424094528602D77007BD10C /* NotesTableViewCell.swift 00-10-46-965.swift */; };
-		8424095128602D77007BD10C /* NotesCollectionViewCell.swift 00-10-46-969.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424094628602D77007BD10C /* NotesCollectionViewCell.swift 00-10-46-969.swift */; };
-		8424095228602D77007BD10C /* SpeechRecognizer.swift 00-10-46-964.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424094728602D77007BD10C /* SpeechRecognizer.swift 00-10-46-964.swift */; };
-		8424095328602D77007BD10C /* NotesViewController.swift 00-10-46-961.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424094828602D77007BD10C /* NotesViewController.swift 00-10-46-961.swift */; };
-		8424095428602D77007BD10C /* NotesCollectionViewCell.xib 00-10-46-966.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8424094A28602D77007BD10C /* NotesCollectionViewCell.xib 00-10-46-966.xib */; };
-		8424095528602D77007BD10C /* Notes.storyboard 00-10-46-954.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8424094B28602D77007BD10C /* Notes.storyboard 00-10-46-954.storyboard */; };
-		8424095628602D77007BD10C /* NotesTableViewCell.xib 00-10-46-960.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8424094C28602D77007BD10C /* NotesTableViewCell.xib 00-10-46-960.xib */; };
-		8424095728602D77007BD10C /* Note+CoreDataClass.swift 00-10-46-968.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424094E28602D77007BD10C /* Note+CoreDataClass.swift 00-10-46-968.swift */; };
-		8424095828602D77007BD10C /* Note+CoreDataProperties.swift 00-10-46-962.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424094F28602D77007BD10C /* Note+CoreDataProperties.swift 00-10-46-962.swift */; };
+		842409A52860C542007BD10C /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424099A2860C542007BD10C /* SpeechRecognizer.swift */; };
+		842409A62860C542007BD10C /* NotesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424099B2860C542007BD10C /* NotesCollectionViewCell.swift */; };
+		842409A72860C542007BD10C /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424099C2860C542007BD10C /* NotesViewController.swift */; };
+		842409A82860C542007BD10C /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424099D2860C542007BD10C /* NotesTableViewCell.swift */; };
+		842409A92860C542007BD10C /* NotesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8424099F2860C542007BD10C /* NotesTableViewCell.xib */; };
+		842409AA2860C542007BD10C /* NotesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842409A02860C542007BD10C /* NotesCollectionViewCell.xib */; };
+		842409AB2860C542007BD10C /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842409A12860C542007BD10C /* Notes.storyboard */; };
+		842409AC2860C542007BD10C /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842409A32860C542007BD10C /* Note+CoreDataProperties.swift */; };
+		842409AD2860C542007BD10C /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842409A42860C542007BD10C /* Note+CoreDataClass.swift */; };
+		842409B72860C551007BD10C /* BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842409AF2860C551007BD10C /* BookCollectionViewCell.swift */; };
+		842409B82860C551007BD10C /* Books.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842409B02860C551007BD10C /* Books.storyboard */; };
+		842409B92860C551007BD10C /* BookCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842409B12860C551007BD10C /* BookCollectionViewCell.xib */; };
+		842409BA2860C551007BD10C /* pdfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842409B22860C551007BD10C /* pdfViewController.swift */; };
+		842409BB2860C551007BD10C /* BookSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842409B32860C551007BD10C /* BookSearchTableViewCell.swift */; };
+		842409BC2860C551007BD10C /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842409B42860C551007BD10C /* BooksViewController.swift */; };
+		842409BD2860C551007BD10C /* BookSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842409B52860C551007BD10C /* BookSearchTableViewCell.xib */; };
+		842409BE2860C551007BD10C /* BookContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842409B62860C551007BD10C /* BookContent.swift */; };
+		842409C12860C57E007BD10C /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 842409C02860C57E007BD10C /* SwiftyJSON */; };
 		84361561284FFA0E00D835DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84361560284FFA0E00D835DF /* AppDelegate.swift */; };
 		84361563284FFA0E00D835DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84361562284FFA0E00D835DF /* SceneDelegate.swift */; };
 		84361565284FFA0E00D835DF /* SpecificsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84361564284FFA0E00D835DF /* SpecificsViewController.swift */; };
@@ -36,14 +45,6 @@
 		843616092853880000D835DF /* SearchPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843616082853880000D835DF /* SearchPage.storyboard */; };
 		8436162C2853930500D835DF /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436162B2853930500D835DF /* CustomTextField.swift */; };
 		8436165028539D3600D835DF /* SearchPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436164F28539D3600D835DF /* SearchPageViewController.swift */; };
-		84504D13286023400085C8E4 /* BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84504D0B286023400085C8E4 /* BookCollectionViewCell.swift */; };
-		84504D14286023400085C8E4 /* Books.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84504D0C286023400085C8E4 /* Books.storyboard */; };
-		84504D15286023400085C8E4 /* BookCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84504D0D286023400085C8E4 /* BookCollectionViewCell.xib */; };
-		84504D16286023400085C8E4 /* pdfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84504D0E286023400085C8E4 /* pdfViewController.swift */; };
-		84504D17286023400085C8E4 /* BookSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84504D0F286023400085C8E4 /* BookSearchTableViewCell.swift */; };
-		84504D18286023400085C8E4 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84504D10286023400085C8E4 /* BooksViewController.swift */; };
-		84504D19286023400085C8E4 /* BookSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84504D11286023400085C8E4 /* BookSearchTableViewCell.xib */; };
-		84504D1A286023400085C8E4 /* BookContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84504D12286023400085C8E4 /* BookContent.swift */; };
 		84FF876D2858EDDB00AF34BC /* TabController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FF876C2858EDDB00AF34BC /* TabController.storyboard */; };
 		AE221223285248350091A102 /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE22121D285248350091A102 /* Quiz.storyboard */; };
 		AE221224285248350091A102 /* QuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE22121F285248350091A102 /* QuestionsModel.swift */; };
@@ -69,15 +70,23 @@
 		56E50329285BC6000020622E /* MusicCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicCollectionViewController.swift; sourceTree = "<group>"; };
 		56E5032B285BC6060020622E /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
 		56E5032D285BC60B0020622E /* Structs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
-		8424094528602D77007BD10C /* NotesTableViewCell.swift 00-10-46-965.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotesTableViewCell.swift 00-10-46-965.swift"; sourceTree = "<group>"; };
-		8424094628602D77007BD10C /* NotesCollectionViewCell.swift 00-10-46-969.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotesCollectionViewCell.swift 00-10-46-969.swift"; sourceTree = "<group>"; };
-		8424094728602D77007BD10C /* SpeechRecognizer.swift 00-10-46-964.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SpeechRecognizer.swift 00-10-46-964.swift"; sourceTree = "<group>"; };
-		8424094828602D77007BD10C /* NotesViewController.swift 00-10-46-961.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotesViewController.swift 00-10-46-961.swift"; sourceTree = "<group>"; };
-		8424094A28602D77007BD10C /* NotesCollectionViewCell.xib 00-10-46-966.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "NotesCollectionViewCell.xib 00-10-46-966.xib"; sourceTree = "<group>"; };
-		8424094B28602D77007BD10C /* Notes.storyboard 00-10-46-954.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Notes.storyboard 00-10-46-954.storyboard"; sourceTree = "<group>"; };
-		8424094C28602D77007BD10C /* NotesTableViewCell.xib 00-10-46-960.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "NotesTableViewCell.xib 00-10-46-960.xib"; sourceTree = "<group>"; };
-		8424094E28602D77007BD10C /* Note+CoreDataClass.swift 00-10-46-968.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift 00-10-46-968.swift"; sourceTree = "<group>"; };
-		8424094F28602D77007BD10C /* Note+CoreDataProperties.swift 00-10-46-962.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift 00-10-46-962.swift"; sourceTree = "<group>"; };
+		8424099A2860C542007BD10C /* SpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		8424099B2860C542007BD10C /* NotesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesCollectionViewCell.swift; sourceTree = "<group>"; };
+		8424099C2860C542007BD10C /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		8424099D2860C542007BD10C /* NotesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
+		8424099F2860C542007BD10C /* NotesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotesTableViewCell.xib; sourceTree = "<group>"; };
+		842409A02860C542007BD10C /* NotesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotesCollectionViewCell.xib; sourceTree = "<group>"; };
+		842409A12860C542007BD10C /* Notes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notes.storyboard; sourceTree = "<group>"; };
+		842409A32860C542007BD10C /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		842409A42860C542007BD10C /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		842409AF2860C551007BD10C /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
+		842409B02860C551007BD10C /* Books.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Books.storyboard; sourceTree = "<group>"; };
+		842409B12860C551007BD10C /* BookCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookCollectionViewCell.xib; sourceTree = "<group>"; };
+		842409B22860C551007BD10C /* pdfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pdfViewController.swift; sourceTree = "<group>"; };
+		842409B32860C551007BD10C /* BookSearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSearchTableViewCell.swift; sourceTree = "<group>"; };
+		842409B42860C551007BD10C /* BooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
+		842409B52860C551007BD10C /* BookSearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookSearchTableViewCell.xib; sourceTree = "<group>"; };
+		842409B62860C551007BD10C /* BookContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookContent.swift; sourceTree = "<group>"; };
 		8436155D284FFA0E00D835DF /* TakeItEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeItEasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84361560284FFA0E00D835DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84361562284FFA0E00D835DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,14 +103,6 @@
 		843616082853880000D835DF /* SearchPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchPage.storyboard; sourceTree = "<group>"; };
 		8436162B2853930500D835DF /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		8436164F28539D3600D835DF /* SearchPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageViewController.swift; sourceTree = "<group>"; };
-		84504D0B286023400085C8E4 /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
-		84504D0C286023400085C8E4 /* Books.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Books.storyboard; sourceTree = "<group>"; };
-		84504D0D286023400085C8E4 /* BookCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookCollectionViewCell.xib; sourceTree = "<group>"; };
-		84504D0E286023400085C8E4 /* pdfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pdfViewController.swift; sourceTree = "<group>"; };
-		84504D0F286023400085C8E4 /* BookSearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSearchTableViewCell.swift; sourceTree = "<group>"; };
-		84504D10286023400085C8E4 /* BooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
-		84504D11286023400085C8E4 /* BookSearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookSearchTableViewCell.xib; sourceTree = "<group>"; };
-		84504D12286023400085C8E4 /* BookContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookContent.swift; sourceTree = "<group>"; };
 		84FF876C2858EDDB00AF34BC /* TabController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabController.storyboard; sourceTree = "<group>"; };
 		84FF8839285BBD8000AF34BC /* takeiteasy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = takeiteasy.png; sourceTree = "<group>"; };
 		AE22121D285248350091A102 /* Quiz.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
@@ -126,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842409C12860C57E007BD10C /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,44 +147,59 @@
 			path = Music;
 			sourceTree = "<group>";
 		};
-		8424094328602D77007BD10C /* Notes */ = {
+		842409982860C542007BD10C /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				8424094428602D77007BD10C /* NotesScripts */,
-				8424094928602D77007BD10C /* NotesStoryBoards */,
-				8424094D28602D77007BD10C /* NotesData */,
+				842409992860C542007BD10C /* NotesScripts */,
+				8424099E2860C542007BD10C /* NotesStoryBoards */,
+				842409A22860C542007BD10C /* NotesData */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
 		};
-		8424094428602D77007BD10C /* NotesScripts */ = {
+		842409992860C542007BD10C /* NotesScripts */ = {
 			isa = PBXGroup;
 			children = (
-				8424094528602D77007BD10C /* NotesTableViewCell.swift 00-10-46-965.swift */,
-				8424094628602D77007BD10C /* NotesCollectionViewCell.swift 00-10-46-969.swift */,
-				8424094728602D77007BD10C /* SpeechRecognizer.swift 00-10-46-964.swift */,
-				8424094828602D77007BD10C /* NotesViewController.swift 00-10-46-961.swift */,
+				8424099A2860C542007BD10C /* SpeechRecognizer.swift */,
+				8424099B2860C542007BD10C /* NotesCollectionViewCell.swift */,
+				8424099C2860C542007BD10C /* NotesViewController.swift */,
+				8424099D2860C542007BD10C /* NotesTableViewCell.swift */,
 			);
 			path = NotesScripts;
 			sourceTree = "<group>";
 		};
-		8424094928602D77007BD10C /* NotesStoryBoards */ = {
+		8424099E2860C542007BD10C /* NotesStoryBoards */ = {
 			isa = PBXGroup;
 			children = (
-				8424094A28602D77007BD10C /* NotesCollectionViewCell.xib 00-10-46-966.xib */,
-				8424094B28602D77007BD10C /* Notes.storyboard 00-10-46-954.storyboard */,
-				8424094C28602D77007BD10C /* NotesTableViewCell.xib 00-10-46-960.xib */,
+				8424099F2860C542007BD10C /* NotesTableViewCell.xib */,
+				842409A02860C542007BD10C /* NotesCollectionViewCell.xib */,
+				842409A12860C542007BD10C /* Notes.storyboard */,
 			);
 			path = NotesStoryBoards;
 			sourceTree = "<group>";
 		};
-		8424094D28602D77007BD10C /* NotesData */ = {
+		842409A22860C542007BD10C /* NotesData */ = {
 			isa = PBXGroup;
 			children = (
-				8424094E28602D77007BD10C /* Note+CoreDataClass.swift 00-10-46-968.swift */,
-				8424094F28602D77007BD10C /* Note+CoreDataProperties.swift 00-10-46-962.swift */,
+				842409A32860C542007BD10C /* Note+CoreDataProperties.swift */,
+				842409A42860C542007BD10C /* Note+CoreDataClass.swift */,
 			);
 			path = NotesData;
+			sourceTree = "<group>";
+		};
+		842409AE2860C551007BD10C /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				842409AF2860C551007BD10C /* BookCollectionViewCell.swift */,
+				842409B02860C551007BD10C /* Books.storyboard */,
+				842409B12860C551007BD10C /* BookCollectionViewCell.xib */,
+				842409B22860C551007BD10C /* pdfViewController.swift */,
+				842409B32860C551007BD10C /* BookSearchTableViewCell.swift */,
+				842409B42860C551007BD10C /* BooksViewController.swift */,
+				842409B52860C551007BD10C /* BookSearchTableViewCell.xib */,
+				842409B62860C551007BD10C /* BookContent.swift */,
+			);
+			path = Books;
 			sourceTree = "<group>";
 		};
 		84361554284FFA0E00D835DF = {
@@ -211,10 +228,10 @@
 				8436156C284FFA0F00D835DF /* Assets.xcassets */,
 				8436156E284FFA0F00D835DF /* LaunchScreen.storyboard */,
 				84361571284FFA0F00D835DF /* Info.plist */,
+				842409AE2860C551007BD10C /* Books */,
+				842409982860C542007BD10C /* Notes */,
 				84FF876E2858EDFC00AF34BC /* TabController */,
 				84361569284FFA0E00D835DF /* TakeItEasy.xcdatamodeld */,
-				8424094328602D77007BD10C /* Notes */,
-				84504D0A286023400085C8E4 /* Books */,
 				5652F83D2853CF1200A943DF /* Music */,
 				843615C328524F1B00D835DF /* Login */,
 				843615BF285131D300D835DF /* ObservableObject.swift */,
@@ -243,21 +260,6 @@
 				8436164F28539D3600D835DF /* SearchPageViewController.swift */,
 			);
 			path = SearchPage;
-			sourceTree = "<group>";
-		};
-		84504D0A286023400085C8E4 /* Books */ = {
-			isa = PBXGroup;
-			children = (
-				84504D0B286023400085C8E4 /* BookCollectionViewCell.swift */,
-				84504D0C286023400085C8E4 /* Books.storyboard */,
-				84504D0D286023400085C8E4 /* BookCollectionViewCell.xib */,
-				84504D0E286023400085C8E4 /* pdfViewController.swift */,
-				84504D0F286023400085C8E4 /* BookSearchTableViewCell.swift */,
-				84504D10286023400085C8E4 /* BooksViewController.swift */,
-				84504D11286023400085C8E4 /* BookSearchTableViewCell.xib */,
-				84504D12286023400085C8E4 /* BookContent.swift */,
-			);
-			path = Books;
 			sourceTree = "<group>";
 		};
 		84FF876E2858EDFC00AF34BC /* TabController */ = {
@@ -330,6 +332,9 @@
 			dependencies = (
 			);
 			name = TakeItEasy;
+			packageProductDependencies = (
+				842409C02860C57E007BD10C /* SwiftyJSON */,
+			);
 			productName = TakeItEasy;
 			productReference = 8436155D284FFA0E00D835DF /* TakeItEasy.app */;
 			productType = "com.apple.product-type.application";
@@ -358,6 +363,9 @@
 				Base,
 			);
 			mainGroup = 84361554284FFA0E00D835DF;
+			packageReferences = (
+				842409BF2860C57E007BD10C /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 8436155E284FFA0E00D835DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -372,20 +380,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842409BD2860C551007BD10C /* BookSearchTableViewCell.xib in Resources */,
 				56E50326285BC5F10020622E /* Music.storyboard in Resources */,
-				8424095428602D77007BD10C /* NotesCollectionViewCell.xib 00-10-46-966.xib in Resources */,
 				84361578284FFAEA00D835DF /* Login.storyboard in Resources */,
 				AE22122D28527C3E0091A102 /* questions.json in Resources */,
-				84504D19286023400085C8E4 /* BookSearchTableViewCell.xib in Resources */,
 				84361570284FFA0F00D835DF /* LaunchScreen.storyboard in Resources */,
-				8424095628602D77007BD10C /* NotesTableViewCell.xib 00-10-46-960.xib in Resources */,
+				842409B92860C551007BD10C /* BookCollectionViewCell.xib in Resources */,
 				8436156D284FFA0F00D835DF /* Assets.xcassets in Resources */,
+				842409A92860C542007BD10C /* NotesTableViewCell.xib in Resources */,
+				842409AB2860C542007BD10C /* Notes.storyboard in Resources */,
 				84361568284FFA0E00D835DF /* Main.storyboard in Resources */,
-				84504D14286023400085C8E4 /* Books.storyboard in Resources */,
-				84504D15286023400085C8E4 /* BookCollectionViewCell.xib in Resources */,
 				84FF876D2858EDDB00AF34BC /* TabController.storyboard in Resources */,
-				8424095528602D77007BD10C /* Notes.storyboard 00-10-46-954.storyboard in Resources */,
+				842409AA2860C542007BD10C /* NotesCollectionViewCell.xib in Resources */,
 				843616092853880000D835DF /* SearchPage.storyboard in Resources */,
+				842409B82860C551007BD10C /* Books.storyboard in Resources */,
 				AE8A8237285BC3CF00CACCB4 /* easy.png in Resources */,
 				AE221223285248350091A102 /* Quiz.storyboard in Resources */,
 			);
@@ -400,39 +408,39 @@
 			files = (
 				AE8A820D2859076400CACCB4 /* Stacks.swift in Sources */,
 				8436162C2853930500D835DF /* CustomTextField.swift in Sources */,
-				84504D13286023400085C8E4 /* BookCollectionViewCell.swift in Sources */,
-				8424095028602D77007BD10C /* NotesTableViewCell.swift 00-10-46-965.swift in Sources */,
+				842409BB2860C551007BD10C /* BookSearchTableViewCell.swift in Sources */,
 				AE221225285248350091A102 /* QuizViewControllerMain.swift in Sources */,
+				842409B72860C551007BD10C /* BookCollectionViewCell.swift in Sources */,
 				AE2212372852BE5F0091A102 /* ResultsViewController.swift in Sources */,
 				AE2212272852510C0091A102 /* QuestionsViewController.swift in Sources */,
+				842409A52860C542007BD10C /* SpeechRecognizer.swift in Sources */,
 				AE221224285248350091A102 /* QuestionsModel.swift in Sources */,
 				56E50328285BC5F70020622E /* MusicCollectionViewCell.swift in Sources */,
 				56E5032C285BC6060020622E /* MusicPlayerViewController.swift in Sources */,
-				84504D17286023400085C8E4 /* BookSearchTableViewCell.swift in Sources */,
+				842409BE2860C551007BD10C /* BookContent.swift in Sources */,
 				84361565284FFA0E00D835DF /* SpecificsViewController.swift in Sources */,
-				8424095728602D77007BD10C /* Note+CoreDataClass.swift 00-10-46-968.swift in Sources */,
 				84361561284FFA0E00D835DF /* AppDelegate.swift in Sources */,
-				84504D1A286023400085C8E4 /* BookContent.swift in Sources */,
 				56E5032A285BC6000020622E /* MusicCollectionViewController.swift in Sources */,
 				84361563284FFA0E00D835DF /* SceneDelegate.swift in Sources */,
+				842409AD2860C542007BD10C /* Note+CoreDataClass.swift in Sources */,
 				AE2212352852BC7C0091A102 /* QuestionsViewModel.swift in Sources */,
-				8424095828602D77007BD10C /* Note+CoreDataProperties.swift 00-10-46-962.swift in Sources */,
+				842409BC2860C551007BD10C /* BooksViewController.swift in Sources */,
 				AE2212292852548D0091A102 /* QuizCollectionViewCell.swift in Sources */,
 				8436157C284FFD9700D835DF /* SignUpPageViewController.swift in Sources */,
 				AE8A81FB2857972900CACCB4 /* CustomButtonDisplay.swift in Sources */,
+				842409A82860C542007BD10C /* NotesTableViewCell.swift in Sources */,
+				842409AC2860C542007BD10C /* Note+CoreDataProperties.swift in Sources */,
 				843615C0285131D300D835DF /* ObservableObject.swift in Sources */,
 				AE22122F285280A70091A102 /* QuestionView.swift in Sources */,
+				842409A72860C542007BD10C /* NotesViewController.swift in Sources */,
 				AEAA3D7D2855A40300A5CF89 /* DbHelperLite.swift in Sources */,
-				84504D16286023400085C8E4 /* pdfViewController.swift in Sources */,
-				84504D18286023400085C8E4 /* BooksViewController.swift in Sources */,
+				842409A62860C542007BD10C /* NotesCollectionViewCell.swift in Sources */,
 				8436165028539D3600D835DF /* SearchPageViewController.swift in Sources */,
 				56E50324285BC5E20020622E /* CustomButton.swift in Sources */,
 				56E5032E285BC60B0020622E /* Structs.swift in Sources */,
-				8424095228602D77007BD10C /* SpeechRecognizer.swift 00-10-46-964.swift in Sources */,
-				8424095128602D77007BD10C /* NotesCollectionViewCell.swift 00-10-46-969.swift in Sources */,
 				8436157A284FFB2300D835DF /* LoginPageViewController.swift in Sources */,
-				8424095328602D77007BD10C /* NotesViewController.swift 00-10-46-961.swift in Sources */,
 				8436156B284FFA0E00D835DF /* TakeItEasy.xcdatamodeld in Sources */,
+				842409BA2860C551007BD10C /* pdfViewController.swift in Sources */,
 				AE88FA8E2852D70100DCC4AD /* MenuCollectionViewCell.swift in Sources */,
 				AE8A8235285AE7B000CACCB4 /* QuizTableViewCell.swift in Sources */,
 			);
@@ -586,9 +594,10 @@
 				INFOPLIST_FILE = TakeItEasy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Quiz;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -614,9 +623,10 @@
 				INFOPLIST_FILE = TakeItEasy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Quiz;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -652,6 +662,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		842409BF2860C57E007BD10C /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		842409C02860C57E007BD10C /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 842409BF2860C57E007BD10C /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		84361569284FFA0E00D835DF /* TakeItEasy.xcdatamodeld */ = {
