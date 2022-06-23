@@ -21,10 +21,5 @@ class QuizTableViewCell: UITableViewCell {
      
     }
 
-    @IBOutlet weak var qui3S: UILabel!
-    @IBOutlet weak var quiz4: UILabel!
-    
-    @IBOutlet weak var quiz1S: UILabel!
-    
-    @IBOutlet weak var quiz2S: UILabel!
+ 
 }

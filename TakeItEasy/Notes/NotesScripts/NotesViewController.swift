@@ -4,7 +4,7 @@
 //
 //  Created by admin on 6/8/22.
 //
-
+import Speech
 import UIKit
 import CoreData
 
@@ -276,8 +276,11 @@ class NotesViewController: UIViewController {
             print("Unable to delete context")
         }
     }
+
     
 }
+
+
 
 //filter
 extension NotesViewController: UISearchBarDelegate{
@@ -380,4 +383,5 @@ extension NotesViewController: UICollectionViewDataSource{
         
         return cell
     }
+
 }
