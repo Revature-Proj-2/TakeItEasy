@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+var totalQuiz : String?
 class ResultsViewController: UIViewController {
     var quizlet : Quizlet?
     @IBAction func tryAgain(_ sender: Any) {
@@ -27,13 +27,11 @@ class ResultsViewController: UIViewController {
         
         resultLabel.text = "\(result)"
         rightAnswer.text = "\(rightA)"
-        total = total + result
-        totalPoints.text = "\(total)"
-        if total == 0{
-            quizlet?.totalQuiz = totalPoints.text
-        }else {
-            quizlet?.totalQuiz = "\(total) + \(rightA)"
-        }
+        
+        totalPoints.text = "\(total)" + "\(result)"
+        totalQuiz = totalPoints.text
+           
+        
         
     }
    

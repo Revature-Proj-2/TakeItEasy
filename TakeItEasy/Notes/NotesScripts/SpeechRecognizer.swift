@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import Speech
 
-class SpeechRecognizer: UIViewController {
+class SpeechRecognizer {
 
     let audioEngine = AVAudioEngine()
     let speechRecognizer = SFSpeechRecognizer()
@@ -20,10 +20,10 @@ class SpeechRecognizer: UIViewController {
     var startStopButton: UIButton!
     var resultText: UITextView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    //override func viewDidLoad() {
+       // super.viewDidLoad()
         // Do any additional setup after loading the view.
-    }
+   // }
 
     func startSpeechRecog(){
         let inputN = audioEngine.inputNode
@@ -39,41 +39,29 @@ class SpeechRecognizer: UIViewController {
         }
         recogTask = speechRecognizer?.recognitionTask(with: bufferRecognizerReq, resultHandler: { resp , error in
             guard let res = resp else{
-                print(error)
+                print(error?.localizedDescription)
+                print("hiiiiiiii")
                 return
             }
-            
-            let msg = resp?.bestTranscription.formattedString
-            self.resultText.text = msg
-            
-            var colorValue = ""
-            for str in resp!.bestTranscription.segments{
-                let indexTo = msg?.index(msg!.startIndex, offsetBy : str.substringRange.location)
-                colorValue = String(msg![indexTo!...])
-            }
-            switch colorValue{
-            case "blue":
-                self.view.backgroundColor = .blue
-            default:
-                self.view.backgroundColor = .white
-            }
-        })
+            print("yo yo yo it is doing it so whatsup")
+            self.resultText.text = resp?.bestTranscription.formattedString
+       })
     }
-    
+                                                      
     
     func startRecording(_ sender: UIButton) {
         
         if isStart == false{
             
             sender.tintColor = .blue
-            self.resultText.text = "This is where I would put my speech to text ....... if I had any! \n\n\nThanks VM"
-            //startSpeechRecog()
+         
+            startSpeechRecog()
         }
         if isStart == true {
             
             sender.tintColor = .gray
-            self.resultText.text = "Speech to text would be stopped now."
-            //stopSpeechRecog()
+          
+            stopSpeechRecog()
         }
         isStart = !isStart
     }
@@ -86,6 +74,7 @@ class SpeechRecognizer: UIViewController {
         audioEngine.stop()
         if audioEngine.inputNode.numberOfInputs > 0 {
             audioEngine.inputNode.removeTap(onBus: 0)
+            audioEngine.inputNode.reset()
         }
     }
     
